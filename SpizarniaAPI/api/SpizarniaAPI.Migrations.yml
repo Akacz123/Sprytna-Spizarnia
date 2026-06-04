@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: SpizarniaAPI.Migrations
+  commentId: N:SpizarniaAPI.Migrations
+  id: SpizarniaAPI.Migrations
+  children:
+  - SpizarniaAPI.Migrations.AddUserAuthAndRelations
+  - SpizarniaAPI.Migrations.InitialCreate
+  - SpizarniaAPI.Migrations.UpdateModelsWithAuth
+  langs:
+  - csharp
+  - vb
+  name: SpizarniaAPI.Migrations
+  nameWithType: SpizarniaAPI.Migrations
+  fullName: SpizarniaAPI.Migrations
+  type: Namespace
+  assemblies:
+  - SpizarniaAPI
+references:
+- uid: SpizarniaAPI.Migrations.InitialCreate
+  commentId: T:SpizarniaAPI.Migrations.InitialCreate
+  href: SpizarniaAPI.Migrations.InitialCreate.html
+  name: InitialCreate
+  nameWithType: InitialCreate
+  fullName: SpizarniaAPI.Migrations.InitialCreate
+- uid: SpizarniaAPI.Migrations.AddUserAuthAndRelations
+  commentId: T:SpizarniaAPI.Migrations.AddUserAuthAndRelations
+  href: SpizarniaAPI.Migrations.AddUserAuthAndRelations.html
+  name: AddUserAuthAndRelations
+  nameWithType: AddUserAuthAndRelations
+  fullName: SpizarniaAPI.Migrations.AddUserAuthAndRelations
+- uid: SpizarniaAPI.Migrations.UpdateModelsWithAuth
+  commentId: T:SpizarniaAPI.Migrations.UpdateModelsWithAuth
+  href: SpizarniaAPI.Migrations.UpdateModelsWithAuth.html
+  name: UpdateModelsWithAuth
+  nameWithType: UpdateModelsWithAuth
+  fullName: SpizarniaAPI.Migrations.UpdateModelsWithAuth

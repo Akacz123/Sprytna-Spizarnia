@@ -1,0 +1,673 @@
+### YamlMime:ManagedReference
+items:
+- uid: SpizarniaAPI.Models.User
+  commentId: T:SpizarniaAPI.Models.User
+  id: User
+  parent: SpizarniaAPI.Models
+  children:
+  - SpizarniaAPI.Models.User.AvatarSeed
+  - SpizarniaAPI.Models.User.CreatedAt
+  - SpizarniaAPI.Models.User.Email
+  - SpizarniaAPI.Models.User.Id
+  - SpizarniaAPI.Models.User.PantryItems
+  - SpizarniaAPI.Models.User.PasswordHash
+  langs:
+  - csharp
+  - vb
+  name: User
+  nameWithType: User
+  fullName: SpizarniaAPI.Models.User
+  type: Class
+  source:
+    remote:
+      path: SpizarniaAPI/SpizarniaAPI/Models/User.cs
+      branch: main
+      repo: https://github.com/Akacz123/Sprytna-Spizarnia.git
+    id: User
+    path: SpizarniaAPI/Models/User.cs
+    startLine: 7
+  assemblies:
+  - SpizarniaAPI
+  namespace: SpizarniaAPI.Models
+  summary: >-
+    Reprezentuje użytkownika aplikacji Sprytna Spiżarnia.
+
+    Hasło przechowywane jest wyłącznie jako hash BCrypt.
+
+    Każdy użytkownik posiada własną kolekcję produktów w spiżarni (<xref href="SpizarniaAPI.Models.PantryItem" data-throw-if-not-resolved="false"></xref>).
+  example: []
+  syntax:
+    content: public class User
+    content.vb: Public Class User
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SpizarniaAPI.Models.User.Id
+  commentId: P:SpizarniaAPI.Models.User.Id
+  id: Id
+  parent: SpizarniaAPI.Models.User
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: User.Id
+  fullName: SpizarniaAPI.Models.User.Id
+  type: Property
+  source:
+    remote:
+      path: SpizarniaAPI/SpizarniaAPI/Models/User.cs
+      branch: main
+      repo: https://github.com/Akacz123/Sprytna-Spizarnia.git
+    id: Id
+    path: SpizarniaAPI/Models/User.cs
+    startLine: 10
+  assemblies:
+  - SpizarniaAPI
+  namespace: SpizarniaAPI.Models
+  summary: Unikalny identyfikator użytkownika (UUID generowany przez PostgreSQL).
+  example: []
+  syntax:
+    content: public Guid Id { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property Id As Guid
+  overload: SpizarniaAPI.Models.User.Id*
+- uid: SpizarniaAPI.Models.User.Email
+  commentId: P:SpizarniaAPI.Models.User.Email
+  id: Email
+  parent: SpizarniaAPI.Models.User
+  langs:
+  - csharp
+  - vb
+  name: Email
+  nameWithType: User.Email
+  fullName: SpizarniaAPI.Models.User.Email
+  type: Property
+  source:
+    remote:
+      path: SpizarniaAPI/SpizarniaAPI/Models/User.cs
+      branch: main
+      repo: https://github.com/Akacz123/Sprytna-Spizarnia.git
+    id: Email
+    path: SpizarniaAPI/Models/User.cs
+    startLine: 16
+  assemblies:
+  - SpizarniaAPI
+  namespace: SpizarniaAPI.Models
+  summary: >-
+    Adres e-mail użytkownika. Służy jako login.
+
+    Wartość jest unikalna w bazie danych (indeks unikalny).
+  example: []
+  syntax:
+    content: public string Email { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Email As String
+  overload: SpizarniaAPI.Models.User.Email*
+- uid: SpizarniaAPI.Models.User.PasswordHash
+  commentId: P:SpizarniaAPI.Models.User.PasswordHash
+  id: PasswordHash
+  parent: SpizarniaAPI.Models.User
+  langs:
+  - csharp
+  - vb
+  name: PasswordHash
+  nameWithType: User.PasswordHash
+  fullName: SpizarniaAPI.Models.User.PasswordHash
+  type: Property
+  source:
+    remote:
+      path: SpizarniaAPI/SpizarniaAPI/Models/User.cs
+      branch: main
+      repo: https://github.com/Akacz123/Sprytna-Spizarnia.git
+    id: PasswordHash
+    path: SpizarniaAPI/Models/User.cs
+    startLine: 19
+  assemblies:
+  - SpizarniaAPI
+  namespace: SpizarniaAPI.Models
+  summary: Hash hasła wygenerowany algorytmem BCrypt. Nigdy nie przechowuje surowego hasła.
+  example: []
+  syntax:
+    content: public string PasswordHash { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PasswordHash As String
+  overload: SpizarniaAPI.Models.User.PasswordHash*
+- uid: SpizarniaAPI.Models.User.CreatedAt
+  commentId: P:SpizarniaAPI.Models.User.CreatedAt
+  id: CreatedAt
+  parent: SpizarniaAPI.Models.User
+  langs:
+  - csharp
+  - vb
+  name: CreatedAt
+  nameWithType: User.CreatedAt
+  fullName: SpizarniaAPI.Models.User.CreatedAt
+  type: Property
+  source:
+    remote:
+      path: SpizarniaAPI/SpizarniaAPI/Models/User.cs
+      branch: main
+      repo: https://github.com/Akacz123/Sprytna-Spizarnia.git
+    id: CreatedAt
+    path: SpizarniaAPI/Models/User.cs
+    startLine: 22
+  assemblies:
+  - SpizarniaAPI
+  namespace: SpizarniaAPI.Models
+  summary: Data i godzina utworzenia konta (UTC).
+  example: []
+  syntax:
+    content: public DateTime CreatedAt { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property CreatedAt As Date
+  overload: SpizarniaAPI.Models.User.CreatedAt*
+- uid: SpizarniaAPI.Models.User.PantryItems
+  commentId: P:SpizarniaAPI.Models.User.PantryItems
+  id: PantryItems
+  parent: SpizarniaAPI.Models.User
+  langs:
+  - csharp
+  - vb
+  name: PantryItems
+  nameWithType: User.PantryItems
+  fullName: SpizarniaAPI.Models.User.PantryItems
+  type: Property
+  source:
+    remote:
+      path: SpizarniaAPI/SpizarniaAPI/Models/User.cs
+      branch: main
+      repo: https://github.com/Akacz123/Sprytna-Spizarnia.git
+    id: PantryItems
+    path: SpizarniaAPI/Models/User.cs
+    startLine: 25
+  assemblies:
+  - SpizarniaAPI
+  namespace: SpizarniaAPI.Models
+  summary: Lista produktów w spiżarni należących do tego użytkownika.
+  example: []
+  syntax:
+    content: public ICollection<PantryItem> PantryItems { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{SpizarniaAPI.Models.PantryItem}
+    content.vb: Public Property PantryItems As ICollection(Of PantryItem)
+  overload: SpizarniaAPI.Models.User.PantryItems*
+- uid: SpizarniaAPI.Models.User.AvatarSeed
+  commentId: P:SpizarniaAPI.Models.User.AvatarSeed
+  id: AvatarSeed
+  parent: SpizarniaAPI.Models.User
+  langs:
+  - csharp
+  - vb
+  name: AvatarSeed
+  nameWithType: User.AvatarSeed
+  fullName: SpizarniaAPI.Models.User.AvatarSeed
+  type: Property
+  source:
+    remote:
+      path: SpizarniaAPI/SpizarniaAPI/Models/User.cs
+      branch: main
+      repo: https://github.com/Akacz123/Sprytna-Spizarnia.git
+    id: AvatarSeed
+    path: SpizarniaAPI/Models/User.cs
+    startLine: 31
+  assemblies:
+  - SpizarniaAPI
+  namespace: SpizarniaAPI.Models
+  summary: >-
+    Seed (ziarno) avatara użytkownika używany przez DiceBear API
+
+    do wygenerowania unikalnej grafiki awatara. Może być null (wtedy używany jest e-mail).
+  example: []
+  syntax:
+    content: public string? AvatarSeed { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property AvatarSeed As String
+  overload: SpizarniaAPI.Models.User.AvatarSeed*
+references:
+- uid: SpizarniaAPI.Models.PantryItem
+  commentId: T:SpizarniaAPI.Models.PantryItem
+  href: SpizarniaAPI.Models.PantryItem.html
+  name: PantryItem
+  nameWithType: PantryItem
+  fullName: SpizarniaAPI.Models.PantryItem
+- uid: SpizarniaAPI.Models
+  commentId: N:SpizarniaAPI.Models
+  href: SpizarniaAPI.html
+  name: SpizarniaAPI.Models
+  nameWithType: SpizarniaAPI.Models
+  fullName: SpizarniaAPI.Models
+  spec.csharp:
+  - uid: SpizarniaAPI
+    name: SpizarniaAPI
+    href: SpizarniaAPI.html
+  - name: .
+  - uid: SpizarniaAPI.Models
+    name: Models
+    href: SpizarniaAPI.Models.html
+  spec.vb:
+  - uid: SpizarniaAPI
+    name: SpizarniaAPI
+    href: SpizarniaAPI.html
+  - name: .
+  - uid: SpizarniaAPI.Models
+    name: Models
+    href: SpizarniaAPI.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SpizarniaAPI.Models.User.Id*
+  commentId: Overload:SpizarniaAPI.Models.User.Id
+  href: SpizarniaAPI.Models.User.html#SpizarniaAPI_Models_User_Id
+  name: Id
+  nameWithType: User.Id
+  fullName: SpizarniaAPI.Models.User.Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: SpizarniaAPI.Models.User.Email*
+  commentId: Overload:SpizarniaAPI.Models.User.Email
+  href: SpizarniaAPI.Models.User.html#SpizarniaAPI_Models_User_Email
+  name: Email
+  nameWithType: User.Email
+  fullName: SpizarniaAPI.Models.User.Email
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SpizarniaAPI.Models.User.PasswordHash*
+  commentId: Overload:SpizarniaAPI.Models.User.PasswordHash
+  href: SpizarniaAPI.Models.User.html#SpizarniaAPI_Models_User_PasswordHash
+  name: PasswordHash
+  nameWithType: User.PasswordHash
+  fullName: SpizarniaAPI.Models.User.PasswordHash
+- uid: SpizarniaAPI.Models.User.CreatedAt*
+  commentId: Overload:SpizarniaAPI.Models.User.CreatedAt
+  href: SpizarniaAPI.Models.User.html#SpizarniaAPI_Models_User_CreatedAt
+  name: CreatedAt
+  nameWithType: User.CreatedAt
+  fullName: SpizarniaAPI.Models.User.CreatedAt
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: SpizarniaAPI.Models.User.PantryItems*
+  commentId: Overload:SpizarniaAPI.Models.User.PantryItems
+  href: SpizarniaAPI.Models.User.html#SpizarniaAPI_Models_User_PantryItems
+  name: PantryItems
+  nameWithType: User.PantryItems
+  fullName: SpizarniaAPI.Models.User.PantryItems
+- uid: System.Collections.Generic.ICollection{SpizarniaAPI.Models.PantryItem}
+  commentId: T:System.Collections.Generic.ICollection{SpizarniaAPI.Models.PantryItem}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<PantryItem>
+  nameWithType: ICollection<PantryItem>
+  fullName: System.Collections.Generic.ICollection<SpizarniaAPI.Models.PantryItem>
+  nameWithType.vb: ICollection(Of PantryItem)
+  fullName.vb: System.Collections.Generic.ICollection(Of SpizarniaAPI.Models.PantryItem)
+  name.vb: ICollection(Of PantryItem)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: SpizarniaAPI.Models.PantryItem
+    name: PantryItem
+    href: SpizarniaAPI.Models.PantryItem.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SpizarniaAPI.Models.PantryItem
+    name: PantryItem
+    href: SpizarniaAPI.Models.PantryItem.html
+  - name: )
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SpizarniaAPI.Models.User.AvatarSeed*
+  commentId: Overload:SpizarniaAPI.Models.User.AvatarSeed
+  href: SpizarniaAPI.Models.User.html#SpizarniaAPI_Models_User_AvatarSeed
+  name: AvatarSeed
+  nameWithType: User.AvatarSeed
+  fullName: SpizarniaAPI.Models.User.AvatarSeed

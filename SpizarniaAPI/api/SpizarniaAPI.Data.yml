@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: SpizarniaAPI.Data
+  commentId: N:SpizarniaAPI.Data
+  id: SpizarniaAPI.Data
+  children:
+  - SpizarniaAPI.Data.AppDbContext
+  langs:
+  - csharp
+  - vb
+  name: SpizarniaAPI.Data
+  nameWithType: SpizarniaAPI.Data
+  fullName: SpizarniaAPI.Data
+  type: Namespace
+  assemblies:
+  - SpizarniaAPI
+references:
+- uid: SpizarniaAPI.Data.AppDbContext
+  commentId: T:SpizarniaAPI.Data.AppDbContext
+  parent: SpizarniaAPI.Data
+  href: SpizarniaAPI.Data.AppDbContext.html
+  name: AppDbContext
+  nameWithType: AppDbContext
+  fullName: SpizarniaAPI.Data.AppDbContext
+- uid: SpizarniaAPI.Data
+  commentId: N:SpizarniaAPI.Data
+  href: SpizarniaAPI.html
+  name: SpizarniaAPI.Data
+  nameWithType: SpizarniaAPI.Data
+  fullName: SpizarniaAPI.Data
+  spec.csharp:
+  - uid: SpizarniaAPI
+    name: SpizarniaAPI
+    href: SpizarniaAPI.html
+  - name: .
+  - uid: SpizarniaAPI.Data
+    name: Data
+    href: SpizarniaAPI.Data.html
+  spec.vb:
+  - uid: SpizarniaAPI
+    name: SpizarniaAPI
+    href: SpizarniaAPI.html
+  - name: .
+  - uid: SpizarniaAPI.Data
+    name: Data
+    href: SpizarniaAPI.Data.html

@@ -1,0 +1,85 @@
+### YamlMime:TableOfContent
+items:
+- uid: SpizarniaAPI.Controllers
+  name: SpizarniaAPI.Controllers
+  type: Namespace
+  items:
+  - uid: SpizarniaAPI.Controllers.AddToPantryDto
+    name: AddToPantryDto
+    type: Class
+  - uid: SpizarniaAPI.Controllers.AuthController
+    name: AuthController
+    type: Class
+  - uid: SpizarniaAPI.Controllers.AuthDto
+    name: AuthDto
+    type: Class
+  - uid: SpizarniaAPI.Controllers.CategoriesController
+    name: CategoriesController
+    type: Class
+  - uid: SpizarniaAPI.Controllers.IngredientsController
+    name: IngredientsController
+    type: Class
+  - uid: SpizarniaAPI.Controllers.PantryController
+    name: PantryController
+    type: Class
+  - uid: SpizarniaAPI.Controllers.RecipesController
+    name: RecipesController
+    type: Class
+  - uid: SpizarniaAPI.Controllers.ScanDto
+    name: ScanDto
+    type: Class
+  - uid: SpizarniaAPI.Controllers.ScannerController
+    name: ScannerController
+    type: Class
+  - uid: SpizarniaAPI.Controllers.UpdateAvatarDto
+    name: UpdateAvatarDto
+    type: Class
+  - uid: SpizarniaAPI.Controllers.UsersController
+    name: UsersController
+    type: Class
+- uid: SpizarniaAPI.Data
+  name: SpizarniaAPI.Data
+  type: Namespace
+  items:
+  - uid: SpizarniaAPI.Data.AppDbContext
+    name: AppDbContext
+    type: Class
+- uid: SpizarniaAPI.Migrations
+  name: SpizarniaAPI.Migrations
+  type: Namespace
+  items:
+  - uid: SpizarniaAPI.Migrations.AddUserAuthAndRelations
+    name: AddUserAuthAndRelations
+    type: Class
+  - uid: SpizarniaAPI.Migrations.InitialCreate
+    name: InitialCreate
+    type: Class
+  - uid: SpizarniaAPI.Migrations.UpdateModelsWithAuth
+    name: UpdateModelsWithAuth
+    type: Class
+- uid: SpizarniaAPI.Models
+  name: SpizarniaAPI.Models
+  type: Namespace
+  items:
+  - uid: SpizarniaAPI.Models.Category
+    name: Category
+    type: Class
+  - uid: SpizarniaAPI.Models.Ingredient
+    name: Ingredient
+    type: Class
+  - uid: SpizarniaAPI.Models.PantryItem
+    name: PantryItem
+    type: Class
+  - uid: SpizarniaAPI.Models.Product
+    name: Product
+    type: Class
+  - uid: SpizarniaAPI.Models.Recipe
+    name: Recipe
+    type: Class
+  - uid: SpizarniaAPI.Models.RecipeIngredient
+    name: RecipeIngredient
+    type: Class
+  - uid: SpizarniaAPI.Models.User
+    name: User
+    type: Class
+memberLayout: SamePage

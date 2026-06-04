@@ -1,0 +1,419 @@
+{
+  "source_base_path": "C:/Users/100wi/OneDrive - Uniwersytet Rzeszowski/2rok2sem/csharp/Sprytna_Spizarnia/SpizarniaAPI",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SpizarniaAPI.Controllers.AddToPantryDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SpizarniaAPI.Controllers.AddToPantryDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SpizarniaAPI.Controllers.AddToPantryDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SpizarniaAPI.Controllers.AuthController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SpizarniaAPI.Controllers.AuthController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SpizarniaAPI.Controllers.AuthController",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SpizarniaAPI.Controllers.AuthDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SpizarniaAPI.Controllers.AuthDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SpizarniaAPI.Controllers.AuthDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SpizarniaAPI.Controllers.CategoriesController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SpizarniaAPI.Controllers.CategoriesController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SpizarniaAPI.Controllers.CategoriesController",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SpizarniaAPI.Controllers.IngredientsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SpizarniaAPI.Controllers.IngredientsController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SpizarniaAPI.Controllers.IngredientsController",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SpizarniaAPI.Controllers.PantryController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SpizarniaAPI.Controllers.PantryController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SpizarniaAPI.Controllers.PantryController",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SpizarniaAPI.Controllers.RecipesController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SpizarniaAPI.Controllers.RecipesController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SpizarniaAPI.Controllers.RecipesController",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SpizarniaAPI.Controllers.ScanDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SpizarniaAPI.Controllers.ScanDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SpizarniaAPI.Controllers.ScanDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SpizarniaAPI.Controllers.ScannerController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SpizarniaAPI.Controllers.ScannerController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SpizarniaAPI.Controllers.ScannerController",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SpizarniaAPI.Controllers.UpdateAvatarDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SpizarniaAPI.Controllers.UpdateAvatarDto.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SpizarniaAPI.Controllers.UpdateAvatarDto",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SpizarniaAPI.Controllers.UsersController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SpizarniaAPI.Controllers.UsersController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SpizarniaAPI.Controllers.UsersController",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SpizarniaAPI.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SpizarniaAPI.Controllers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SpizarniaAPI.Controllers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SpizarniaAPI.Data.AppDbContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SpizarniaAPI.Data.AppDbContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SpizarniaAPI.Data.AppDbContext",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SpizarniaAPI.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SpizarniaAPI.Data.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SpizarniaAPI.Data",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SpizarniaAPI.Migrations.AddUserAuthAndRelations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SpizarniaAPI.Migrations.AddUserAuthAndRelations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SpizarniaAPI.Migrations.AddUserAuthAndRelations",
+      "Summary": "<p sourcefile=\"api/SpizarniaAPI.Migrations.AddUserAuthAndRelations.yml\" sourcestartlinenumber=\"1\">A base class inherited by each EF Core migration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SpizarniaAPI.Migrations.InitialCreate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SpizarniaAPI.Migrations.InitialCreate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SpizarniaAPI.Migrations.InitialCreate",
+      "Summary": "<p sourcefile=\"api/SpizarniaAPI.Migrations.InitialCreate.yml\" sourcestartlinenumber=\"1\">A base class inherited by each EF Core migration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SpizarniaAPI.Migrations.UpdateModelsWithAuth.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SpizarniaAPI.Migrations.UpdateModelsWithAuth.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SpizarniaAPI.Migrations.UpdateModelsWithAuth",
+      "Summary": "<p sourcefile=\"api/SpizarniaAPI.Migrations.UpdateModelsWithAuth.yml\" sourcestartlinenumber=\"1\">A base class inherited by each EF Core migration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SpizarniaAPI.Migrations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SpizarniaAPI.Migrations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SpizarniaAPI.Migrations",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SpizarniaAPI.Models.Category.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SpizarniaAPI.Models.Category.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SpizarniaAPI.Models.Category",
+      "Summary": "<p sourcefile=\"api/SpizarniaAPI.Models.Category.yml\" sourcestartlinenumber=\"1\">Reprezentuje kategorię składników spożywczych (np. &quot;Nabiał&quot;, &quot;Mięso&quot;, &quot;Warzywa&quot;, &quot;Inne&quot;).\nKażda kategoria może zawierać wiele składników (<xref href=\"SpizarniaAPI.Models.Ingredient\" data-throw-if-not-resolved=\"false\"></xref>).\nKategoria &quot;Inne&quot; tworzona jest automatycznie przez <code>PantryController</code> dla nowych produktów.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SpizarniaAPI.Models.Ingredient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SpizarniaAPI.Models.Ingredient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SpizarniaAPI.Models.Ingredient",
+      "Summary": "<p sourcefile=\"api/SpizarniaAPI.Models.Ingredient.yml\" sourcestartlinenumber=\"1\">Reprezentuje ogólny składnik spożywczy (np. &quot;mleko&quot;, &quot;jajka&quot;, &quot;mąka&quot;).\nNależy do jednej kategorii (<xref href=\"SpizarniaAPI.Models.Ingredient.Category\" data-throw-if-not-resolved=\"false\"></xref>) i może być powiązany\nz wieloma konkretnymi produktami (<xref href=\"SpizarniaAPI.Models.Product\" data-throw-if-not-resolved=\"false\"></xref>) oraz przepisami (<xref href=\"SpizarniaAPI.Models.RecipeIngredient\" data-throw-if-not-resolved=\"false\"></xref>).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SpizarniaAPI.Models.PantryItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SpizarniaAPI.Models.PantryItem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SpizarniaAPI.Models.PantryItem",
+      "Summary": "<p sourcefile=\"api/SpizarniaAPI.Models.PantryItem.yml\" sourcestartlinenumber=\"1\">Reprezentuje pojedynczy produkt przechowywany w spiżarni użytkownika.\nŁączy użytkownika (<xref href=\"SpizarniaAPI.Models.PantryItem.User\" data-throw-if-not-resolved=\"false\"></xref>) z produktem (<xref href=\"SpizarniaAPI.Models.PantryItem.Product\" data-throw-if-not-resolved=\"false\"></xref>)\ni zawiera informacje o ilości oraz dacie ważności.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SpizarniaAPI.Models.Product.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SpizarniaAPI.Models.Product.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SpizarniaAPI.Models.Product",
+      "Summary": "<p sourcefile=\"api/SpizarniaAPI.Models.Product.yml\" sourcestartlinenumber=\"1\">Reprezentuje konkretny produkt spożywczy (np. markę) powiązany z ogólnym składnikiem (<xref href=\"SpizarniaAPI.Models.Product.Ingredient\" data-throw-if-not-resolved=\"false\"></xref>).\nProdukt może być identyfikowany przez unikalny kod kreskowy EAN.\nKażdy produkt jest powiązany z użytkownikiem, który go dodał (<xref href=\"SpizarniaAPI.Models.Product.User\" data-throw-if-not-resolved=\"false\"></xref>).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SpizarniaAPI.Models.Recipe.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SpizarniaAPI.Models.Recipe.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SpizarniaAPI.Models.Recipe",
+      "Summary": "<p sourcefile=\"api/SpizarniaAPI.Models.Recipe.yml\" sourcestartlinenumber=\"1\">Reprezentuje przepis kulinarny w systemie.\nPrzepisy są sugerowane użytkownikowi przez <code>RecipesController</code> na podstawie składników\nz krótką datą ważności. Baza ~100 przepisów może być zasilona endpointem <code>POST /api/recipes/seed</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SpizarniaAPI.Models.RecipeIngredient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SpizarniaAPI.Models.RecipeIngredient.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SpizarniaAPI.Models.RecipeIngredient",
+      "Summary": "<p sourcefile=\"api/SpizarniaAPI.Models.RecipeIngredient.yml\" sourcestartlinenumber=\"1\">Tabela pośrednia łącząca przepisy (<xref href=\"SpizarniaAPI.Models.RecipeIngredient.Recipe\" data-throw-if-not-resolved=\"false\"></xref>) ze składnikami (<xref href=\"SpizarniaAPI.Models.RecipeIngredient.Ingredient\" data-throw-if-not-resolved=\"false\"></xref>).\nPrzechowuje wymaganą ilość i jednostkę miary danego składnika w konkretnym przepisie.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SpizarniaAPI.Models.User.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SpizarniaAPI.Models.User.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SpizarniaAPI.Models.User",
+      "Summary": "<p sourcefile=\"api/SpizarniaAPI.Models.User.yml\" sourcestartlinenumber=\"1\">Reprezentuje użytkownika aplikacji Sprytna Spiżarnia.\nHasło przechowywane jest wyłącznie jako hash BCrypt.\nKażdy użytkownik posiada własną kolekcję produktów w spiżarni (<xref href=\"SpizarniaAPI.Models.PantryItem\" data-throw-if-not-resolved=\"false\"></xref>).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SpizarniaAPI.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SpizarniaAPI.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SpizarniaAPI.Models",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

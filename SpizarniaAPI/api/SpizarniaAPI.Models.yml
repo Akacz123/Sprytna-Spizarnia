@@ -1,0 +1,92 @@
+### YamlMime:ManagedReference
+items:
+- uid: SpizarniaAPI.Models
+  commentId: N:SpizarniaAPI.Models
+  id: SpizarniaAPI.Models
+  children:
+  - SpizarniaAPI.Models.Category
+  - SpizarniaAPI.Models.Ingredient
+  - SpizarniaAPI.Models.PantryItem
+  - SpizarniaAPI.Models.Product
+  - SpizarniaAPI.Models.Recipe
+  - SpizarniaAPI.Models.RecipeIngredient
+  - SpizarniaAPI.Models.User
+  langs:
+  - csharp
+  - vb
+  name: SpizarniaAPI.Models
+  nameWithType: SpizarniaAPI.Models
+  fullName: SpizarniaAPI.Models
+  type: Namespace
+  assemblies:
+  - SpizarniaAPI
+references:
+- uid: SpizarniaAPI.Models.Category
+  commentId: T:SpizarniaAPI.Models.Category
+  parent: SpizarniaAPI.Models
+  href: SpizarniaAPI.Models.Category.html
+  name: Category
+  nameWithType: Category
+  fullName: SpizarniaAPI.Models.Category
+- uid: SpizarniaAPI.Models.Ingredient
+  commentId: T:SpizarniaAPI.Models.Ingredient
+  parent: SpizarniaAPI.Models
+  href: SpizarniaAPI.Models.Ingredient.html
+  name: Ingredient
+  nameWithType: Ingredient
+  fullName: SpizarniaAPI.Models.Ingredient
+- uid: SpizarniaAPI.Models.PantryItem
+  commentId: T:SpizarniaAPI.Models.PantryItem
+  href: SpizarniaAPI.Models.PantryItem.html
+  name: PantryItem
+  nameWithType: PantryItem
+  fullName: SpizarniaAPI.Models.PantryItem
+- uid: SpizarniaAPI.Models.Product
+  commentId: T:SpizarniaAPI.Models.Product
+  parent: SpizarniaAPI.Models
+  href: SpizarniaAPI.Models.Product.html
+  name: Product
+  nameWithType: Product
+  fullName: SpizarniaAPI.Models.Product
+- uid: SpizarniaAPI.Models.Recipe
+  commentId: T:SpizarniaAPI.Models.Recipe
+  parent: SpizarniaAPI.Models
+  href: SpizarniaAPI.Models.Recipe.html
+  name: Recipe
+  nameWithType: Recipe
+  fullName: SpizarniaAPI.Models.Recipe
+- uid: SpizarniaAPI.Models.RecipeIngredient
+  commentId: T:SpizarniaAPI.Models.RecipeIngredient
+  href: SpizarniaAPI.Models.RecipeIngredient.html
+  name: RecipeIngredient
+  nameWithType: RecipeIngredient
+  fullName: SpizarniaAPI.Models.RecipeIngredient
+- uid: SpizarniaAPI.Models.User
+  commentId: T:SpizarniaAPI.Models.User
+  parent: SpizarniaAPI.Models
+  href: SpizarniaAPI.Models.User.html
+  name: User
+  nameWithType: User
+  fullName: SpizarniaAPI.Models.User
+- uid: SpizarniaAPI.Models
+  commentId: N:SpizarniaAPI.Models
+  href: SpizarniaAPI.html
+  name: SpizarniaAPI.Models
+  nameWithType: SpizarniaAPI.Models
+  fullName: SpizarniaAPI.Models
+  spec.csharp:
+  - uid: SpizarniaAPI
+    name: SpizarniaAPI
+    href: SpizarniaAPI.html
+  - name: .
+  - uid: SpizarniaAPI.Models
+    name: Models
+    href: SpizarniaAPI.Models.html
+  spec.vb:
+  - uid: SpizarniaAPI
+    name: SpizarniaAPI
+    href: SpizarniaAPI.html
+  - name: .
+  - uid: SpizarniaAPI.Models
+    name: Models
+    href: SpizarniaAPI.Models.html

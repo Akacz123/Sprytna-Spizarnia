@@ -1,0 +1,119 @@
+### YamlMime:ManagedReference
+items:
+- uid: SpizarniaAPI.Controllers
+  commentId: N:SpizarniaAPI.Controllers
+  id: SpizarniaAPI.Controllers
+  children:
+  - SpizarniaAPI.Controllers.AddToPantryDto
+  - SpizarniaAPI.Controllers.AuthController
+  - SpizarniaAPI.Controllers.AuthDto
+  - SpizarniaAPI.Controllers.CategoriesController
+  - SpizarniaAPI.Controllers.IngredientsController
+  - SpizarniaAPI.Controllers.PantryController
+  - SpizarniaAPI.Controllers.RecipesController
+  - SpizarniaAPI.Controllers.ScanDto
+  - SpizarniaAPI.Controllers.ScannerController
+  - SpizarniaAPI.Controllers.UpdateAvatarDto
+  - SpizarniaAPI.Controllers.UsersController
+  langs:
+  - csharp
+  - vb
+  name: SpizarniaAPI.Controllers
+  nameWithType: SpizarniaAPI.Controllers
+  fullName: SpizarniaAPI.Controllers
+  type: Namespace
+  assemblies:
+  - SpizarniaAPI
+references:
+- uid: SpizarniaAPI.Controllers.AuthController
+  commentId: T:SpizarniaAPI.Controllers.AuthController
+  href: SpizarniaAPI.Controllers.AuthController.html
+  name: AuthController
+  nameWithType: AuthController
+  fullName: SpizarniaAPI.Controllers.AuthController
+- uid: SpizarniaAPI.Controllers.AuthDto
+  commentId: T:SpizarniaAPI.Controllers.AuthDto
+  parent: SpizarniaAPI.Controllers
+  href: SpizarniaAPI.Controllers.AuthDto.html
+  name: AuthDto
+  nameWithType: AuthDto
+  fullName: SpizarniaAPI.Controllers.AuthDto
+- uid: SpizarniaAPI.Controllers.UpdateAvatarDto
+  commentId: T:SpizarniaAPI.Controllers.UpdateAvatarDto
+  parent: SpizarniaAPI.Controllers
+  href: SpizarniaAPI.Controllers.UpdateAvatarDto.html
+  name: UpdateAvatarDto
+  nameWithType: UpdateAvatarDto
+  fullName: SpizarniaAPI.Controllers.UpdateAvatarDto
+- uid: SpizarniaAPI.Controllers.CategoriesController
+  commentId: T:SpizarniaAPI.Controllers.CategoriesController
+  href: SpizarniaAPI.Controllers.CategoriesController.html
+  name: CategoriesController
+  nameWithType: CategoriesController
+  fullName: SpizarniaAPI.Controllers.CategoriesController
+- uid: SpizarniaAPI.Controllers.IngredientsController
+  commentId: T:SpizarniaAPI.Controllers.IngredientsController
+  href: SpizarniaAPI.Controllers.IngredientsController.html
+  name: IngredientsController
+  nameWithType: IngredientsController
+  fullName: SpizarniaAPI.Controllers.IngredientsController
+- uid: SpizarniaAPI.Controllers.PantryController
+  commentId: T:SpizarniaAPI.Controllers.PantryController
+  href: SpizarniaAPI.Controllers.PantryController.html
+  name: PantryController
+  nameWithType: PantryController
+  fullName: SpizarniaAPI.Controllers.PantryController
+- uid: SpizarniaAPI.Controllers.AddToPantryDto
+  commentId: T:SpizarniaAPI.Controllers.AddToPantryDto
+  parent: SpizarniaAPI.Controllers
+  href: SpizarniaAPI.Controllers.AddToPantryDto.html
+  name: AddToPantryDto
+  nameWithType: AddToPantryDto
+  fullName: SpizarniaAPI.Controllers.AddToPantryDto
+- uid: SpizarniaAPI.Controllers.RecipesController
+  commentId: T:SpizarniaAPI.Controllers.RecipesController
+  href: SpizarniaAPI.Controllers.RecipesController.html
+  name: RecipesController
+  nameWithType: RecipesController
+  fullName: SpizarniaAPI.Controllers.RecipesController
+- uid: SpizarniaAPI.Controllers.ScannerController
+  commentId: T:SpizarniaAPI.Controllers.ScannerController
+  href: SpizarniaAPI.Controllers.ScannerController.html
+  name: ScannerController
+  nameWithType: ScannerController
+  fullName: SpizarniaAPI.Controllers.ScannerController
+- uid: SpizarniaAPI.Controllers.ScanDto
+  commentId: T:SpizarniaAPI.Controllers.ScanDto
+  parent: SpizarniaAPI.Controllers
+  href: SpizarniaAPI.Controllers.ScanDto.html
+  name: ScanDto
+  nameWithType: ScanDto
+  fullName: SpizarniaAPI.Controllers.ScanDto
+- uid: SpizarniaAPI.Controllers.UsersController
+  commentId: T:SpizarniaAPI.Controllers.UsersController
+  href: SpizarniaAPI.Controllers.UsersController.html
+  name: UsersController
+  nameWithType: UsersController
+  fullName: SpizarniaAPI.Controllers.UsersController
+- uid: SpizarniaAPI.Controllers
+  commentId: N:SpizarniaAPI.Controllers
+  href: SpizarniaAPI.html
+  name: SpizarniaAPI.Controllers
+  nameWithType: SpizarniaAPI.Controllers
+  fullName: SpizarniaAPI.Controllers
+  spec.csharp:
+  - uid: SpizarniaAPI
+    name: SpizarniaAPI
+    href: SpizarniaAPI.html
+  - name: .
+  - uid: SpizarniaAPI.Controllers
+    name: Controllers
+    href: SpizarniaAPI.Controllers.html
+  spec.vb:
+  - uid: SpizarniaAPI
+    name: SpizarniaAPI
+    href: SpizarniaAPI.html
+  - name: .
+  - uid: SpizarniaAPI.Controllers
+    name: Controllers
+    href: SpizarniaAPI.Controllers.html

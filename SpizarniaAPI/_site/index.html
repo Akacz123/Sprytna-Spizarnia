@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Sprytna Spiżarnia | Sprytna Spiżarnia API </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Sprytna Spiżarnia | Sprytna Spiżarnia API ">
+    
+    
+      <link rel="shortcut icon" href="favicon.ico">
+      <link rel="stylesheet" href="styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="styles/docfx.css">
+      <link rel="stylesheet" href="styles/main.css">
+      <meta property="docfx:navrel" content="toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="sprytna-spiżarnia">Sprytna Spiżarnia</h1>
+
+<p><strong>Sprytna Spiżarnia</strong> to webowa aplikacja do zarządzania domowymi zapasami żywności. Umożliwia śledzenie dat ważności produktów, skanowanie kodów kreskowych za pomocą telefonu oraz automatyczne sugestie przepisów dopasowanych do składników, którym kończy się termin przydatności. Aplikacja jest skierowana do każdego, kto chce ograniczyć marnowanie jedzenia i lepiej organizować produkty spożywcze w domu.</p>
+<p><strong>Jaki problem rozwiązuje?</strong>
+Aplikacja rozwiązuje problem marnowania jedzenia spowodowany zapominaniem o datach ważności produktów w spiżarni i lodówce. Zamiast wyrzucać przeterminowane produkty, użytkownik jest informowany z wyprzedzeniem i dostaje propozycje przepisów pozwalających je wykorzystać.</p>
+<p><strong>Czym się wyróżnia?</strong>
+W przeciwieństwie do zwykłych list zakupów Sprytna Spiżarnia oferuje skanowanie kodów kreskowych przez QR (bez instalowania aplikacji mobilnej), automatyczne pobieranie nazw produktów z globalnej bazy Open Food Facts oraz inteligentne sugestie przepisów posortowane według liczby „ratowanych&quot; składników.</p>
+<hr>
+<h2 id="uruchomienie-projektu-developer">Uruchomienie projektu (developer)</h2>
+<h3 id="użyte-technologie">Użyte technologie</h3>
+<table>
+<thead>
+<tr>
+<th>Technologia</th>
+<th>Wersja</th>
+<th>Rola</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://dotnet.microsoft.com/">.NET</a></td>
+<td><code>10.0</code></td>
+<td>Backend Web API</td>
+</tr>
+<tr>
+<td><a href="https://learn.microsoft.com/en-us/aspnet/core/">ASP.NET Core</a></td>
+<td><code>10.0</code></td>
+<td>Framework HTTP</td>
+</tr>
+<tr>
+<td><a href="https://learn.microsoft.com/en-us/ef/core/">Entity Framework Core</a></td>
+<td><code>10.0.6</code></td>
+<td>ORM / migracje bazy danych</td>
+</tr>
+<tr>
+<td><a href="https://www.postgresql.org/">PostgreSQL</a></td>
+<td><code>16+</code></td>
+<td>Relacyjna baza danych (hostowana na Supabase)</td>
+</tr>
+<tr>
+<td><a href="https://www.npgsql.org/">Npgsql</a></td>
+<td><code>10.0.1</code></td>
+<td>Sterownik EF Core dla PostgreSQL</td>
+</tr>
+<tr>
+<td><a href="https://github.com/BcryptNet/bcrypt.net">BCrypt.Net-Next</a></td>
+<td><code>4.1.0</code></td>
+<td>Hashowanie haseł użytkowników</td>
+</tr>
+<tr>
+<td><a href="https://github.com/domaindrivendev/Swashbuckle.AspNetCore">Swashbuckle / Swagger</a></td>
+<td><code>10.1.7</code></td>
+<td>Dokumentacja i testowanie API</td>
+</tr>
+<tr>
+<td><a href="https://react.dev/">React</a></td>
+<td><code>19.x</code></td>
+<td>Frontend – biblioteka UI</td>
+</tr>
+<tr>
+<td><a href="https://vite.dev/">Vite</a></td>
+<td><code>8.x</code></td>
+<td>Bundler / serwer deweloperski</td>
+</tr>
+<tr>
+<td><a href="https://tailwindcss.com/">Tailwind CSS</a></td>
+<td><code>3.4.x</code></td>
+<td>Stylowanie komponentów</td>
+</tr>
+<tr>
+<td><a href="https://reactrouter.com/">React Router DOM</a></td>
+<td><code>7.x</code></td>
+<td>Routing po stronie klienta (SPA)</td>
+</tr>
+<tr>
+<td><a href="https://axios-http.com/">Axios</a></td>
+<td><code>1.x</code></td>
+<td>Klient HTTP do komunikacji z API</td>
+</tr>
+<tr>
+<td><a href="https://lucide.dev/">Lucide React</a></td>
+<td><code>1.x</code></td>
+<td>Biblioteka ikon SVG</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mebjas/html5-qrcode">html5-qrcode</a></td>
+<td><code>2.3.x</code></td>
+<td>Skaner kodów kreskowych w przeglądarce mobilnej</td>
+</tr>
+<tr>
+<td><a href="https://github.com/zpao/qrcode.react">qrcode.react</a></td>
+<td><code>4.x</code></td>
+<td>Generowanie kodów QR na stronie desktop</td>
+</tr>
+<tr>
+<td><a href="https://world.openfoodfacts.org/data">Open Food Facts API</a></td>
+<td><code>v0</code></td>
+<td>Globalna baza produktów spożywczych (publiczne API)</td>
+</tr>
+<tr>
+<td><a href="https://www.dicebear.com/">DiceBear API</a></td>
+<td><code>7.x</code></td>
+<td>Generowanie awatarów użytkowników</td>
+</tr>
+</tbody>
+</table>
+<h3 id="wymagania-programowe">Wymagania programowe</h3>
+<ul>
+<li><strong>System operacyjny</strong>: Windows 10/11, macOS 13+, lub Linux (Ubuntu 22.04+)</li>
+<li><strong>Środowisko uruchomieniowe / SDK</strong>:
+<ul>
+<li><a href="https://dotnet.microsoft.com/download/dotnet/10.0">.NET SDK 10.0</a> — do uruchomienia backendu</li>
+<li><a href="https://nodejs.org/">Node.js v20+</a> — do uruchomienia frontendu</li>
+<li>npm <code>10+</code> (instalowany razem z Node.js)</li>
+</ul>
+</li>
+<li><strong>Baza danych</strong>:
+<ul>
+<li>Projekt korzysta z <a href="https://supabase.com/">Supabase</a> (PostgreSQL w chmurze) — <strong>baza jest już skonfigurowana</strong>, nie trzeba instalować PostgreSQL lokalnie.</li>
+<li>Connection string znajduje się w pliku <code>SpizarniaAPI/SpizarniaAPI/appsettings.json</code>.</li>
+</ul>
+</li>
+<li><strong>Narzędzia deweloperskie (opcjonalnie)</strong>:
+<ul>
+<li><a href="https://visualstudio.microsoft.com/">Visual Studio Insiders</a> — IDE użyte do tworzenia backendu C#</li>
+<li><a href="https://code.visualstudio.com/">Visual Studio Code</a> — edytor dla frontendu React</li>
+</ul>
+</li>
+</ul>
+<h3 id="kroki-uruchomienia">Kroki uruchomienia</h3>
+<h4 id="1-klonowanie-repozytorium">1. Klonowanie repozytorium</h4>
+<pre><code class="lang-bash">git clone &lt;url-repozytorium&gt;
+cd Sprytna_Spizarnia
+</code></pre>
+<h4 id="2-uruchomienie-backendu-aspnet-core">2. Uruchomienie backendu (ASP.NET Core)</h4>
+<p>Można uruchomić przez terminal lub bezpośrednio z <strong>Visual Studio</strong> (przycisk ▶ Run):</p>
+<pre><code class="lang-bash">cd SpizarniaAPI/SpizarniaAPI
+dotnet run
+</code></pre>
+<p>Backend uruchamia się na porcie <code>5289</code>. Interaktywna dokumentacja Swagger dostępna pod adresem:
+<code>http://localhost:5289/swagger</code></p>
+<blockquote>
+<p><strong>Uwaga</strong>: Jeśli chcesz zaktualizować schemat bazy danych, użyj: <code>dotnet ef database update</code></p>
+</blockquote>
+<h4 id="3-uruchomienie-frontendu-react--vite">3. Uruchomienie frontendu (React + Vite)</h4>
+<p><strong>Tryb standardowy</strong> (tylko przeglądarka na tym samym komputerze):</p>
+<pre><code class="lang-bash">cd spizarnia-front
+npm install
+npm run dev
+</code></pre>
+<p>Frontend dostępny pod adresem: <code>http://localhost:5173</code></p>
+<p><strong>Tryb sieciowy</strong> (wymagany do działania skanera QR przez telefon):</p>
+<p>Aby telefon w tej samej sieci Wi-Fi mógł otworzyć stronę skanera, frontend musi nasłuchiwać na adresie IP komputera, nie tylko na <code>localhost</code>. Wymagane dwa kroki:</p>
+<ol>
+<li>Uruchom Vite z flagą <code>--host</code>, która eksponuje serwer w sieci lokalnej:</li>
+</ol>
+<pre><code class="lang-bash">npm run dev -- --host
+</code></pre>
+<p>Vite wyświetli adres IP, np.:</p>
+<pre><code>  ➜  Network: http://192.168.1.15:5173/
+</code></pre>
+<ol start="2">
+<li>W pliku <code>src/api.js</code> zmień <code>baseURL</code> z <code>localhost</code> na adres IP swojego komputera:</li>
+</ol>
+<pre><code class="lang-js">// src/api.js
+const api = axios.create({
+  baseURL: &quot;http://192.168.1.15:5289/api&quot;, // ← adres IP zamiast localhost
+});
+</code></pre>
+<p>Po tych zmianach kod QR generowany na stronie <code>/dodaj</code> będzie zawierał poprawny adres IP, który telefon (w tej samej sieci Wi-Fi) będzie w stanie otworzyć.</p>
+<blockquote>
+<p><strong>Ważne</strong>: Backend musi działać przed otwarciem frontendu. Adres IP zmienia się przy każdym połączeniu z siecią — sprawdź aktualny przez <code>ipconfig</code> (Windows) lub <code>ip a</code> (Linux/macOS).</p>
+</blockquote>
+<hr>
+<h2 id="architektura-systemu">Architektura systemu</h2>
+<pre><code>┌────────────────────────────────────────────────────────────┐
+│                    Przeglądarka (klient)                   │
+│  ┌─────────────────────────────────────────────────────┐   │
+│  │          React SPA (spizarnia-front / Vite)          │   │
+│  │  Routing: React Router DOM                           │   │
+│  │  Styl:    Tailwind CSS                               │   │
+│  │  HTTP:    Axios → nagłówek X-User-Id (auth)          │   │
+│  └─────────────────────────────────────────────────────┘   │
+└──────────────────────────┬─────────────────────────────────┘
+                           │ HTTP REST (port 5289)
+                           ▼
+┌────────────────────────────────────────────────────────────┐
+│              ASP.NET Core Web API (SpizarniaAPI)            │
+│  Controllers/                                               │
+│  ├── AuthController       – rejestracja, logowanie, avatar  │
+│  ├── PantryController     – spiżarnia (CRUD + logika)       │
+│  ├── RecipesController    – sugestie przepisów + seeder     │
+│  ├── ScannerController    – relay kodów QR (in-memory)      │
+│  ├── CategoriesController – zarządzanie kategoriami         │
+│  ├── IngredientsController– zarządzanie składnikami         │
+│  └── UsersController      – zarządzanie użytkownikami       │
+│  Data/AppDbContext – EF Core DbContext                      │
+│  Models/           – encje bazy danych                      │
+└──────────────────────────┬─────────────────────────────────┘
+                           │ Npgsql / EF Core
+                           ▼
+┌────────────────────────────────────────────────────────────┐
+│               PostgreSQL (Supabase – chmura)                │
+│  Tabele: Users, Products, Ingredients, Categories,          │
+│          PantryItems, Recipes, RecipeIngredients            │
+└────────────────────────────────────────────────────────────┘
+</code></pre>
+<hr>
+<h2 id="diagram-encji-erd">Diagram encji (ERD)</h2>
+<pre><code>                                                     ┌──────────────────┐
+                                                     │    Category      │
+                                                     │──────────────────│
+                                                     │ Id (int) PK      │
+                                                     │ Name             │
+                                                     └────────▲─────────┘
+                                                              │ * 1
+┌──────────────┐        ┌───────────────────┐      ┌─────────┴────────┐
+│     User     │ 1    * │    PantryItem      │      │   Ingredient     │
+│──────────────│◄───────│───────────────────│      │──────────────────│
+│ Id (Guid) PK │        │ Id (Guid) PK       │      │ Id (int) PK      │
+│ Email        │        │ UserId (FK→User)   │      │ CategoryId (FK)  │
+│ PasswordHash │        │ ProductId (FK)     │      │ Name             │
+│ AvatarSeed   │        │ Quantity           │      └──────────▲───────┘
+│ CreatedAt    │        │ Unit               │                 │
+└──────┬───────┘        │ ExpirationDate     │                 │ * 1
+       │                │ CreatedAt          │      ┌──────────┴───────────┐
+       │                │ UpdatedAt          │  *1  │      Product         │
+       │                └──────────┬─────────┘─────►│──────────────────────│
+       │                           │                │ Id (int) PK          │
+       │                           │                │ IngredientId (FK)    │
+       └───────────────────────────┼───────────────►│ Name                 │
+                  FK→User          │                │ Barcode (unique)     │
+                                   │                │ UserId (FK→User)     │
+                                   │                └──────────────────────┘
+                                   │
+┌─────────────────┐        ┌───────┴──────────────────┐
+│     Recipe      │ 1    * │     RecipeIngredient      │
+│─────────────────│◄───────│──────────────────────────│
+│ Id (int) PK     │        │ Id (int) PK               │
+│ Title           │        │ RecipeId (FK→Recipe)      │
+│ Instructions    │        │ IngredientId (FK→Ingr.)   │
+│ PrepTimeMinutes │        │ Quantity                  │
+└─────────────────┘        │ Unit                      │
+                           └───────────────────────────┘
+</code></pre>
+<blockquote>
+<p>Encja <code>Ingredient</code> jest współdzielona przez oba konteksty: produkt w spiżarni wskazuje na składnik przez <code>Product.IngredientId</code>, a przepis wskazuje na składnik przez <code>RecipeIngredient.IngredientId</code>. Dzięki temu system może dopasowywać produkty użytkownika do przepisów.</p>
+</blockquote>
+<hr>
+<h2 id="struktura-projektu">Struktura projektu</h2>
+<pre><code>Sprytna_Spizarnia/
+│
+├── SpizarniaAPI/                        # Backend (C# / ASP.NET Core)
+│   └── SpizarniaAPI/
+│       ├── Controllers/
+│       │   ├── AuthController.cs        # POST /api/auth/register, login, PUT avatar
+│       │   ├── PantryController.cs      # GET/POST/PUT/DELETE /api/pantry
+│       │   ├── RecipesController.cs     # GET /api/recipes/suggestions, POST seed
+│       │   ├── ScannerController.cs     # GET/POST /api/scanner/{sessionId}
+│       │   ├── CategoriesController.cs  # CRUD /api/categories
+│       │   ├── IngredientsController.cs # CRUD /api/ingredients
+│       │   └── UsersController.cs       # CRUD /api/users
+│       ├── Data/
+│       │   └── AppDbContext.cs          # EF Core kontekst + konfiguracja relacji
+│       ├── Migrations/                  # Migracje EF Core (historia schematu bazy)
+│       ├── Models/
+│       │   ├── Category.cs
+│       │   ├── Ingredient.cs
+│       │   ├── PantryItem.cs
+│       │   ├── Product.cs
+│       │   ├── Recipe.cs
+│       │   ├── RecipeIngredient.cs
+│       │   └── User.cs
+│       ├── Program.cs                   # Konfiguracja DI, CORS, pipeline HTTP
+│       ├── appsettings.json             # Connection string do Supabase
+│       └── SpizarniaAPI.csproj
+│
+└── spizarnia-front/                     # Frontend (React + Vite)
+    └── src/
+        ├── api.js                       # Axios z interceptorem X-User-Id
+        ├── App.jsx                      # Routing + ProtectedRoute
+        ├── components/
+        │   ├── Navbar.jsx               # Nawigacja z awatarem DiceBear
+        │   ├── AddProductModal.jsx      # Modal dodawania produktu
+        │   └── MobileScanner.jsx        # Widok aparatu na urządzeniu mobilnym
+        ├── pages/
+        │   ├── LoginPage.jsx            # Logowanie / rejestracja
+        │   ├── DashboardPage.jsx        # Pulpit – alerty + sugestie przepisów
+        │   ├── PantryPage.jsx           # Lista spiżarni z filtrowaniem i edycją
+        │   ├── AddProductPage.jsx       # Formularz + skaner QR
+        │   ├── SettingsPage.jsx         # Ustawienia konta, awatara i wyglądu
+        │   └── RecipesPage.jsx          # Strona przepisów (w budowie)
+        ├── index.css
+        └── main.jsx
+</code></pre>
+<hr>
+<h2 id="opis-ekranów-aplikacji">Opis ekranów aplikacji</h2>
+<h3 id="logowanie-i-rejestracja-login">Logowanie i rejestracja (<code>/login</code>)</h3>
+<p>Ekran startowy. Formularz z polem e-mail i hasłem obsługuje dwa tryby: <strong>Zaloguj się</strong> i <strong>Zarejestruj się</strong> (przełączane jednym przyciskiem). Po zalogowaniu API zwraca <code>userId</code>, który zapisywany jest w <code>localStorage</code>. Każde kolejne żądanie HTTP dołącza ten identyfikator w nagłówku <code>X-User-Id</code>.</p>
+<h3 id="pulpit-">Pulpit (<code>/</code>)</h3>
+<p>Główny ekran podzielony na dwie kolumny:</p>
+<ul>
+<li><strong>Zjedz mnie wkrótce!</strong> – alerty o produktach przeterminowanych (czerwone karty) i kończących się w ciągu 3 dni (żółte karty). Przyciski „Zjedzone&quot; i „Wyrzucone&quot; usuwają produkt z spiżarni przez <code>DELETE /api/pantry/{id}</code>.</li>
+<li><strong>Uratuj to, co masz!</strong> – propozycje przepisów pobierane z <code>GET /api/recipes/suggestions</code>, posortowane malejąco wg liczby „ratowanych&quot; składników. Do każdego przepisu dobierany jest obrazek z Unsplash na podstawie słów kluczowych w nazwie.</li>
+</ul>
+<h3 id="moja-kuchnia-kuchnia">Moja Kuchnia (<code>/kuchnia</code>)</h3>
+<p>Pełna tabela wszystkich produktów w spiżarni danego użytkownika. Funkcjonalności:</p>
+<ul>
+<li><strong>Wyszukiwarka</strong> po nazwie</li>
+<li><strong>Filtry statusu</strong>: Wszystkie / Świeże / Krótka data (≤3 dni) / Przeterminowane</li>
+<li><strong>Edycja</strong> przez kliknięcie w wiersz – otwiera modal z polami: nazwa, kod kreskowy, data ważności, ilość, jednostka (<code>PUT /api/pantry/{id}</code>)</li>
+<li><strong>Usuwanie</strong> przyciskiem „Usuń&quot; (<code>DELETE /api/pantry/{id}</code>)</li>
+</ul>
+<h3 id="dodaj-produkt-dodaj">Dodaj Produkt (<code>/dodaj</code>)</h3>
+<p>Dwa sposoby dodania produktu:</p>
+<ol>
+<li><strong>Ręcznie</strong> – formularz z polami: Nazwa, Kod kreskowy (opcjonalnie), Data ważności, Ilość, Jednostka (szt./kg/g/l/ml/opak.)</li>
+<li><strong>Skaner mobilny</strong> – kliknięcie „Uruchom skaner w telefonie&quot; generuje sesję i kod QR. Zeskanowanie go telefonem otwiera widok <code>/scan/:sessionId</code> z kamerą. Zeskanowany kod kreskowy trafia do <code>POST /api/scanner/{sessionId}</code>. Strona desktop odpytuje <code>GET /api/scanner/{sessionId}</code> co 1,5 s. Po wykryciu kodu aplikacja pobiera dane z Open Food Facts i uzupełnia formularz.</li>
+</ol>
+<h3 id="ustawienia-ustawienia">Ustawienia (<code>/ustawienia</code>)</h3>
+<p>Dwie zakładki w bocznym menu:</p>
+<ul>
+<li><strong>Profil i Konto</strong>: wyświetlanie e-maila (read-only), wybór awatara z galerii 9 postaci (DiceBear API, zapisywany przez <code>PUT /api/auth/avatar</code>), pola zmiany hasła (UI)</li>
+<li><strong>Wygląd</strong>: przełącznik motywu (jasny/ciemny) i rozmiaru tekstu (mała/domyślna/duża). Preferencje zapisywane w <code>localStorage</code> i natychmiast stosowane do całej aplikacji przez zdarzenie <code>appearanceChanged</code>.</li>
+</ul>
+<hr>
+<h2 id="endpointy-api">Endpointy API</h2>
+<p>Pełna interaktywna dokumentacja dostępna przez <strong>Swagger UI</strong> pod <code>http://localhost:5289/swagger</code> w trybie deweloperskim.</p>
+<h3 id="autoryzacja">Autoryzacja</h3>
+<p>Każdy endpoint (poza <code>/api/auth/*</code>) wymaga nagłówka HTTP:</p>
+<pre><code>X-User-Id: &lt;uuid-użytkownika&gt;
+</code></pre>
+<h3 id="tabela-endpointów">Tabela endpointów</h3>
+<table>
+<thead>
+<tr>
+<th>Metoda</th>
+<th>Ścieżka</th>
+<th>Kontroler</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>POST</code></td>
+<td><code>/api/auth/register</code></td>
+<td><code>AuthController</code></td>
+<td>Rejestracja – hasło hashowane BCrypt</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/api/auth/login</code></td>
+<td><code>AuthController</code></td>
+<td>Logowanie – zwraca <code>userId</code>, <code>email</code>, <code>avatarSeed</code></td>
+</tr>
+<tr>
+<td><code>PUT</code></td>
+<td><code>/api/auth/avatar</code></td>
+<td><code>AuthController</code></td>
+<td>Zmiana awatara zalogowanego użytkownika</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/api/pantry</code></td>
+<td><code>PantryController</code></td>
+<td>Lista produktów w spiżarni (filtr po userId)</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/api/pantry</code></td>
+<td><code>PantryController</code></td>
+<td>Dodaj produkt (auto-tworzy Product/Ingredient/Category)</td>
+</tr>
+<tr>
+<td><code>PUT</code></td>
+<td><code>/api/pantry/{id}</code></td>
+<td><code>PantryController</code></td>
+<td>Aktualizuj produkt w spiżarni</td>
+</tr>
+<tr>
+<td><code>DELETE</code></td>
+<td><code>/api/pantry/{id}</code></td>
+<td><code>PantryController</code></td>
+<td>Usuń produkt z spiżarni</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/api/recipes/suggestions</code></td>
+<td><code>RecipesController</code></td>
+<td>Przepisy dla psujących się składników</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/api/recipes/seed</code></td>
+<td><code>RecipesController</code></td>
+<td>Wgraj ~100 przykładowych przepisów do bazy</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/api/scanner/{sessionId}</code></td>
+<td><code>ScannerController</code></td>
+<td>Odbierz zeskanowany kod (polling)</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/api/scanner/{sessionId}</code></td>
+<td><code>ScannerController</code></td>
+<td>Zapisz zeskanowany kod (z telefonu)</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/api/categories</code></td>
+<td><code>CategoriesController</code></td>
+<td>Lista kategorii</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/api/categories</code></td>
+<td><code>CategoriesController</code></td>
+<td>Dodaj kategorię</td>
+</tr>
+<tr>
+<td><code>PUT</code></td>
+<td><code>/api/categories/{id}</code></td>
+<td><code>CategoriesController</code></td>
+<td>Aktualizuj kategorię</td>
+</tr>
+<tr>
+<td><code>DELETE</code></td>
+<td><code>/api/categories/{id}</code></td>
+<td><code>CategoriesController</code></td>
+<td>Usuń kategorię</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/api/ingredients</code></td>
+<td><code>IngredientsController</code></td>
+<td>Lista składników</td>
+</tr>
+<tr>
+<td><code>POST</code></td>
+<td><code>/api/ingredients</code></td>
+<td><code>IngredientsController</code></td>
+<td>Dodaj składnik</td>
+</tr>
+<tr>
+<td><code>PUT</code></td>
+<td><code>/api/ingredients/{id}</code></td>
+<td><code>IngredientsController</code></td>
+<td>Aktualizuj składnik</td>
+</tr>
+<tr>
+<td><code>DELETE</code></td>
+<td><code>/api/ingredients/{id}</code></td>
+<td><code>IngredientsController</code></td>
+<td>Usuń składnik</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/api/users</code></td>
+<td><code>UsersController</code></td>
+<td>Lista użytkowników</td>
+</tr>
+<tr>
+<td><code>GET</code></td>
+<td><code>/api/users/{id}</code></td>
+<td><code>UsersController</code></td>
+<td>Pobierz użytkownika po ID</td>
+</tr>
+<tr>
+<td><code>PUT</code></td>
+<td><code>/api/users/{id}</code></td>
+<td><code>UsersController</code></td>
+<td>Aktualizuj użytkownika</td>
+</tr>
+<tr>
+<td><code>DELETE</code></td>
+<td><code>/api/users/{id}</code></td>
+<td><code>UsersController</code></td>
+<td>Usuń użytkownika</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="logika-biznesowa--kluczowe-algorytmy">Logika biznesowa – kluczowe algorytmy</h2>
+<h3 id="dodawanie-produktu-do-spiżarni-post-apipantry">Dodawanie produktu do spiżarni (POST /api/pantry)</h3>
+<p>Endpoint stosuje strategię <strong>find-or-create</strong> na kilku poziomach:</p>
+<ol>
+<li>Szuka <code>Product</code> po nazwie (case-insensitive). Jeśli nie istnieje:</li>
+<li>Szuka <code>Ingredient</code> po nazwie. Jeśli nie istnieje:</li>
+<li>Szuka <code>Category</code> o nazwie „Inne&quot;. Jeśli nie istnieje – tworzy ją.</li>
+<li>Tworzy <code>Ingredient</code> z tą kategorią.</li>
+<li>Tworzy <code>Product</code> z kodem kreskowym (lub <code>&quot;BRAK-{timestamp}&quot;</code> jeśli brak).</li>
+<li>Tworzy <code>PantryItem</code> przypisany do użytkownika.</li>
+</ol>
+<h3 id="sugestie-przepisów-get-apirecipessuggestions">Sugestie przepisów (GET /api/recipes/suggestions)</h3>
+<ol>
+<li>Pobiera <code>IngredientId</code> wszystkich produktów użytkownika z datą ważności ≤ dzisiaj + 3 dni.</li>
+<li>Wyszukuje przepisy (<code>Recipe</code>), które zawierają <strong>przynajmniej jeden</strong> z tych składników.</li>
+<li>Dla każdego przepisu oblicza listę „ratowanych&quot; składników (przecięcie).</li>
+<li>Zwraca przepisy posortowane <strong>malejąco</strong> wg liczby ratowanych składników.</li>
+</ol>
+<h3 id="skanowanie-mobilne-scannercontroller">Skanowanie mobilne (ScannerController)</h3>
+<p>Używa <code>ConcurrentDictionary&lt;string, string&gt;</code> przechowywanego <strong>w pamięci procesu</strong> (in-memory). Klucz to <code>sessionId</code> (5-znakowy kod alfanumeryczny). Telefon wysyła kod <code>POST</code>, desktop odbiera i usuwa go przez <code>GET</code>. Nie wymaga bazy danych ani WebSocketów.</p>
+<hr>
+<h2 id="bezpieczeństwo">Bezpieczeństwo</h2>
+<ul>
+<li><strong>Hasła</strong> hashowane algorytmem BCrypt (biblioteka <code>BCrypt.Net-Next 4.1.0</code>). Surowe hasło nigdy nie jest zapisywane w bazie.</li>
+<li><strong>Autoryzacja</strong> oparta o nagłówek <code>X-User-Id</code> (UUID). Każdy endpoint spiżarni filtruje dane tylko dla podanego userId.</li>
+<li><strong>CORS</strong> skonfigurowany z <code>AllowAnyOrigin</code> (dla środowiska deweloperskiego).</li>
+</ul>
+<blockquote>
+<p><strong>Uwaga</strong>: Mechanizm <code>X-User-Id</code> jest uproszczony na potrzeby projektu akademickiego. W środowisku produkcyjnym należy zastosować JWT (JSON Web Tokens) lub inny standard tokenów.</p>
+</blockquote>
+<hr>
+<h2 id="znane-ograniczenia-i-plany-rozwoju">Znane ograniczenia i plany rozwoju</h2>
+<ul>
+<li>Strona przepisów (<code>RecipesPage.jsx</code>) jest w trakcie budowy – komponent nie zawiera jeszcze treści</li>
+<li>Zmiana hasła widoczna w UI ustawień, ale endpoint backendowy nie jest zaimplementowany</li>
+<li>Nawigacja mobilna (hamburger menu) nie jest zaimplementowana – linki Navbar są ukryte na małych ekranach</li>
+<li><code>ScannerController</code> przechowuje kody w pamięci procesu – restart serwera kasuje oczekujące sesje skanowania</li>
+<li>Kategorie produktów w widoku Moja Kuchnia wyświetlane są statycznie jako „Inne&quot;</li>
+</ul>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Akacz123/Sprytna-Spizarnia/blob/main/SpizarniaAPI/index.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

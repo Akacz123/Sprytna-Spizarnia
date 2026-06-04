@@ -1,0 +1,789 @@
+### YamlMime:ManagedReference
+items:
+- uid: SpizarniaAPI.Models.PantryItem
+  commentId: T:SpizarniaAPI.Models.PantryItem
+  id: PantryItem
+  parent: SpizarniaAPI.Models
+  children:
+  - SpizarniaAPI.Models.PantryItem.CreatedAt
+  - SpizarniaAPI.Models.PantryItem.ExpirationDate
+  - SpizarniaAPI.Models.PantryItem.Id
+  - SpizarniaAPI.Models.PantryItem.Product
+  - SpizarniaAPI.Models.PantryItem.ProductId
+  - SpizarniaAPI.Models.PantryItem.Quantity
+  - SpizarniaAPI.Models.PantryItem.Unit
+  - SpizarniaAPI.Models.PantryItem.UpdatedAt
+  - SpizarniaAPI.Models.PantryItem.User
+  - SpizarniaAPI.Models.PantryItem.UserId
+  langs:
+  - csharp
+  - vb
+  name: PantryItem
+  nameWithType: PantryItem
+  fullName: SpizarniaAPI.Models.PantryItem
+  type: Class
+  source:
+    remote:
+      path: SpizarniaAPI/SpizarniaAPI/Models/PantryItem.cs
+      branch: main
+      repo: https://github.com/Akacz123/Sprytna-Spizarnia.git
+    id: PantryItem
+    path: SpizarniaAPI/Models/PantryItem.cs
+    startLine: 9
+  assemblies:
+  - SpizarniaAPI
+  namespace: SpizarniaAPI.Models
+  summary: >-
+    Reprezentuje pojedynczy produkt przechowywany w spiżarni użytkownika.
+
+    Łączy użytkownika (<xref href="SpizarniaAPI.Models.PantryItem.User" data-throw-if-not-resolved="false"></xref>) z produktem (<xref href="SpizarniaAPI.Models.PantryItem.Product" data-throw-if-not-resolved="false"></xref>)
+
+    i zawiera informacje o ilości oraz dacie ważności.
+  example: []
+  syntax:
+    content: public class PantryItem
+    content.vb: Public Class PantryItem
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SpizarniaAPI.Models.PantryItem.Id
+  commentId: P:SpizarniaAPI.Models.PantryItem.Id
+  id: Id
+  parent: SpizarniaAPI.Models.PantryItem
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: PantryItem.Id
+  fullName: SpizarniaAPI.Models.PantryItem.Id
+  type: Property
+  source:
+    remote:
+      path: SpizarniaAPI/SpizarniaAPI/Models/PantryItem.cs
+      branch: main
+      repo: https://github.com/Akacz123/Sprytna-Spizarnia.git
+    id: Id
+    path: SpizarniaAPI/Models/PantryItem.cs
+    startLine: 12
+  assemblies:
+  - SpizarniaAPI
+  namespace: SpizarniaAPI.Models
+  summary: Unikalny identyfikator pozycji w spiżarni (UUID generowany przez PostgreSQL).
+  example: []
+  syntax:
+    content: public Guid Id { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property Id As Guid
+  overload: SpizarniaAPI.Models.PantryItem.Id*
+- uid: SpizarniaAPI.Models.PantryItem.UserId
+  commentId: P:SpizarniaAPI.Models.PantryItem.UserId
+  id: UserId
+  parent: SpizarniaAPI.Models.PantryItem
+  langs:
+  - csharp
+  - vb
+  name: UserId
+  nameWithType: PantryItem.UserId
+  fullName: SpizarniaAPI.Models.PantryItem.UserId
+  type: Property
+  source:
+    remote:
+      path: SpizarniaAPI/SpizarniaAPI/Models/PantryItem.cs
+      branch: main
+      repo: https://github.com/Akacz123/Sprytna-Spizarnia.git
+    id: UserId
+    path: SpizarniaAPI/Models/PantryItem.cs
+    startLine: 15
+  assemblies:
+  - SpizarniaAPI
+  namespace: SpizarniaAPI.Models
+  summary: Identyfikator właściciela – użytkownika, do którego należy ten produkt (klucz obcy).
+  example: []
+  syntax:
+    content: public Guid UserId { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property UserId As Guid
+  overload: SpizarniaAPI.Models.PantryItem.UserId*
+- uid: SpizarniaAPI.Models.PantryItem.User
+  commentId: P:SpizarniaAPI.Models.PantryItem.User
+  id: User
+  parent: SpizarniaAPI.Models.PantryItem
+  langs:
+  - csharp
+  - vb
+  name: User
+  nameWithType: PantryItem.User
+  fullName: SpizarniaAPI.Models.PantryItem.User
+  type: Property
+  source:
+    remote:
+      path: SpizarniaAPI/SpizarniaAPI/Models/PantryItem.cs
+      branch: main
+      repo: https://github.com/Akacz123/Sprytna-Spizarnia.git
+    id: User
+    path: SpizarniaAPI/Models/PantryItem.cs
+    startLine: 21
+  assemblies:
+  - SpizarniaAPI
+  namespace: SpizarniaAPI.Models
+  summary: >-
+    Nawigacja do użytkownika-właściciela. Oznaczona <code>[JsonIgnore]</code>
+
+    aby uniknąć cykli referencyjnych podczas serializacji JSON.
+  example: []
+  syntax:
+    content: >-
+      [JsonIgnore]
+
+      public User? User { get; set; }
+    parameters: []
+    return:
+      type: SpizarniaAPI.Models.User
+    content.vb: >-
+      <JsonIgnore>
+
+      Public Property User As User
+  overload: SpizarniaAPI.Models.PantryItem.User*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonIgnoreAttribute
+    ctor: System.Text.Json.Serialization.JsonIgnoreAttribute.#ctor
+    arguments: []
+- uid: SpizarniaAPI.Models.PantryItem.ProductId
+  commentId: P:SpizarniaAPI.Models.PantryItem.ProductId
+  id: ProductId
+  parent: SpizarniaAPI.Models.PantryItem
+  langs:
+  - csharp
+  - vb
+  name: ProductId
+  nameWithType: PantryItem.ProductId
+  fullName: SpizarniaAPI.Models.PantryItem.ProductId
+  type: Property
+  source:
+    remote:
+      path: SpizarniaAPI/SpizarniaAPI/Models/PantryItem.cs
+      branch: main
+      repo: https://github.com/Akacz123/Sprytna-Spizarnia.git
+    id: ProductId
+    path: SpizarniaAPI/Models/PantryItem.cs
+    startLine: 25
+  assemblies:
+  - SpizarniaAPI
+  namespace: SpizarniaAPI.Models
+  summary: Identyfikator produktu (klucz obcy do tabeli Products).
+  example: []
+  syntax:
+    content: public int ProductId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ProductId As Integer
+  overload: SpizarniaAPI.Models.PantryItem.ProductId*
+- uid: SpizarniaAPI.Models.PantryItem.Product
+  commentId: P:SpizarniaAPI.Models.PantryItem.Product
+  id: Product
+  parent: SpizarniaAPI.Models.PantryItem
+  langs:
+  - csharp
+  - vb
+  name: Product
+  nameWithType: PantryItem.Product
+  fullName: SpizarniaAPI.Models.PantryItem.Product
+  type: Property
+  source:
+    remote:
+      path: SpizarniaAPI/SpizarniaAPI/Models/PantryItem.cs
+      branch: main
+      repo: https://github.com/Akacz123/Sprytna-Spizarnia.git
+    id: Product
+    path: SpizarniaAPI/Models/PantryItem.cs
+    startLine: 28
+  assemblies:
+  - SpizarniaAPI
+  namespace: SpizarniaAPI.Models
+  summary: Nawigacja do encji produktu zawierającej nazwę i kod kreskowy.
+  example: []
+  syntax:
+    content: public Product? Product { get; set; }
+    parameters: []
+    return:
+      type: SpizarniaAPI.Models.Product
+    content.vb: Public Property Product As Product
+  overload: SpizarniaAPI.Models.PantryItem.Product*
+- uid: SpizarniaAPI.Models.PantryItem.Quantity
+  commentId: P:SpizarniaAPI.Models.PantryItem.Quantity
+  id: Quantity
+  parent: SpizarniaAPI.Models.PantryItem
+  langs:
+  - csharp
+  - vb
+  name: Quantity
+  nameWithType: PantryItem.Quantity
+  fullName: SpizarniaAPI.Models.PantryItem.Quantity
+  type: Property
+  source:
+    remote:
+      path: SpizarniaAPI/SpizarniaAPI/Models/PantryItem.cs
+      branch: main
+      repo: https://github.com/Akacz123/Sprytna-Spizarnia.git
+    id: Quantity
+    path: SpizarniaAPI/Models/PantryItem.cs
+    startLine: 31
+  assemblies:
+  - SpizarniaAPI
+  namespace: SpizarniaAPI.Models
+  summary: Ilość produktu w spiżarni (np. 2.5 lub 3).
+  example: []
+  syntax:
+    content: public decimal Quantity { get; set; }
+    parameters: []
+    return:
+      type: System.Decimal
+    content.vb: Public Property Quantity As Decimal
+  overload: SpizarniaAPI.Models.PantryItem.Quantity*
+- uid: SpizarniaAPI.Models.PantryItem.Unit
+  commentId: P:SpizarniaAPI.Models.PantryItem.Unit
+  id: Unit
+  parent: SpizarniaAPI.Models.PantryItem
+  langs:
+  - csharp
+  - vb
+  name: Unit
+  nameWithType: PantryItem.Unit
+  fullName: SpizarniaAPI.Models.PantryItem.Unit
+  type: Property
+  source:
+    remote:
+      path: SpizarniaAPI/SpizarniaAPI/Models/PantryItem.cs
+      branch: main
+      repo: https://github.com/Akacz123/Sprytna-Spizarnia.git
+    id: Unit
+    path: SpizarniaAPI/Models/PantryItem.cs
+    startLine: 37
+  assemblies:
+  - SpizarniaAPI
+  namespace: SpizarniaAPI.Models
+  summary: >-
+    Jednostka miary. Pole wymagane. Domyślnie "szt.".
+
+    Możliwe wartości: szt., kg, g, l, ml, opak.
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      public string Unit { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required>
+
+      Public Property Unit As String
+  overload: SpizarniaAPI.Models.PantryItem.Unit*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+- uid: SpizarniaAPI.Models.PantryItem.ExpirationDate
+  commentId: P:SpizarniaAPI.Models.PantryItem.ExpirationDate
+  id: ExpirationDate
+  parent: SpizarniaAPI.Models.PantryItem
+  langs:
+  - csharp
+  - vb
+  name: ExpirationDate
+  nameWithType: PantryItem.ExpirationDate
+  fullName: SpizarniaAPI.Models.PantryItem.ExpirationDate
+  type: Property
+  source:
+    remote:
+      path: SpizarniaAPI/SpizarniaAPI/Models/PantryItem.cs
+      branch: main
+      repo: https://github.com/Akacz123/Sprytna-Spizarnia.git
+    id: ExpirationDate
+    path: SpizarniaAPI/Models/PantryItem.cs
+    startLine: 41
+  assemblies:
+  - SpizarniaAPI
+  namespace: SpizarniaAPI.Models
+  summary: Data ważności produktu. Produkty z datą przeszłą lub ≤ 3 dni pojawiają się na Pulpicie.
+  example: []
+  syntax:
+    content: public DateTime ExpirationDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property ExpirationDate As Date
+  overload: SpizarniaAPI.Models.PantryItem.ExpirationDate*
+- uid: SpizarniaAPI.Models.PantryItem.UpdatedAt
+  commentId: P:SpizarniaAPI.Models.PantryItem.UpdatedAt
+  id: UpdatedAt
+  parent: SpizarniaAPI.Models.PantryItem
+  langs:
+  - csharp
+  - vb
+  name: UpdatedAt
+  nameWithType: PantryItem.UpdatedAt
+  fullName: SpizarniaAPI.Models.PantryItem.UpdatedAt
+  type: Property
+  source:
+    remote:
+      path: SpizarniaAPI/SpizarniaAPI/Models/PantryItem.cs
+      branch: main
+      repo: https://github.com/Akacz123/Sprytna-Spizarnia.git
+    id: UpdatedAt
+    path: SpizarniaAPI/Models/PantryItem.cs
+    startLine: 44
+  assemblies:
+  - SpizarniaAPI
+  namespace: SpizarniaAPI.Models
+  summary: Data ostatniej modyfikacji pozycji (UTC).
+  example: []
+  syntax:
+    content: public DateTime UpdatedAt { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property UpdatedAt As Date
+  overload: SpizarniaAPI.Models.PantryItem.UpdatedAt*
+- uid: SpizarniaAPI.Models.PantryItem.CreatedAt
+  commentId: P:SpizarniaAPI.Models.PantryItem.CreatedAt
+  id: CreatedAt
+  parent: SpizarniaAPI.Models.PantryItem
+  langs:
+  - csharp
+  - vb
+  name: CreatedAt
+  nameWithType: PantryItem.CreatedAt
+  fullName: SpizarniaAPI.Models.PantryItem.CreatedAt
+  type: Property
+  source:
+    remote:
+      path: SpizarniaAPI/SpizarniaAPI/Models/PantryItem.cs
+      branch: main
+      repo: https://github.com/Akacz123/Sprytna-Spizarnia.git
+    id: CreatedAt
+    path: SpizarniaAPI/Models/PantryItem.cs
+    startLine: 47
+  assemblies:
+  - SpizarniaAPI
+  namespace: SpizarniaAPI.Models
+  summary: Data dodania produktu do spiżarni (UTC).
+  example: []
+  syntax:
+    content: public DateTime CreatedAt { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property CreatedAt As Date
+  overload: SpizarniaAPI.Models.PantryItem.CreatedAt*
+references:
+- uid: SpizarniaAPI.Models.PantryItem.User
+  commentId: P:SpizarniaAPI.Models.PantryItem.User
+  href: SpizarniaAPI.Models.PantryItem.html#SpizarniaAPI_Models_PantryItem_User
+  name: User
+  nameWithType: PantryItem.User
+  fullName: SpizarniaAPI.Models.PantryItem.User
+- uid: SpizarniaAPI.Models.PantryItem.Product
+  commentId: P:SpizarniaAPI.Models.PantryItem.Product
+  href: SpizarniaAPI.Models.PantryItem.html#SpizarniaAPI_Models_PantryItem_Product
+  name: Product
+  nameWithType: PantryItem.Product
+  fullName: SpizarniaAPI.Models.PantryItem.Product
+- uid: SpizarniaAPI.Models
+  commentId: N:SpizarniaAPI.Models
+  href: SpizarniaAPI.html
+  name: SpizarniaAPI.Models
+  nameWithType: SpizarniaAPI.Models
+  fullName: SpizarniaAPI.Models
+  spec.csharp:
+  - uid: SpizarniaAPI
+    name: SpizarniaAPI
+    href: SpizarniaAPI.html
+  - name: .
+  - uid: SpizarniaAPI.Models
+    name: Models
+    href: SpizarniaAPI.Models.html
+  spec.vb:
+  - uid: SpizarniaAPI
+    name: SpizarniaAPI
+    href: SpizarniaAPI.html
+  - name: .
+  - uid: SpizarniaAPI.Models
+    name: Models
+    href: SpizarniaAPI.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SpizarniaAPI.Models.PantryItem.Id*
+  commentId: Overload:SpizarniaAPI.Models.PantryItem.Id
+  href: SpizarniaAPI.Models.PantryItem.html#SpizarniaAPI_Models_PantryItem_Id
+  name: Id
+  nameWithType: PantryItem.Id
+  fullName: SpizarniaAPI.Models.PantryItem.Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: SpizarniaAPI.Models.PantryItem.UserId*
+  commentId: Overload:SpizarniaAPI.Models.PantryItem.UserId
+  href: SpizarniaAPI.Models.PantryItem.html#SpizarniaAPI_Models_PantryItem_UserId
+  name: UserId
+  nameWithType: PantryItem.UserId
+  fullName: SpizarniaAPI.Models.PantryItem.UserId
+- uid: SpizarniaAPI.Models.PantryItem.User*
+  commentId: Overload:SpizarniaAPI.Models.PantryItem.User
+  href: SpizarniaAPI.Models.PantryItem.html#SpizarniaAPI_Models_PantryItem_User
+  name: User
+  nameWithType: PantryItem.User
+  fullName: SpizarniaAPI.Models.PantryItem.User
+- uid: SpizarniaAPI.Models.User
+  commentId: T:SpizarniaAPI.Models.User
+  parent: SpizarniaAPI.Models
+  href: SpizarniaAPI.Models.User.html
+  name: User
+  nameWithType: User
+  fullName: SpizarniaAPI.Models.User
+- uid: SpizarniaAPI.Models.PantryItem.ProductId*
+  commentId: Overload:SpizarniaAPI.Models.PantryItem.ProductId
+  href: SpizarniaAPI.Models.PantryItem.html#SpizarniaAPI_Models_PantryItem_ProductId
+  name: ProductId
+  nameWithType: PantryItem.ProductId
+  fullName: SpizarniaAPI.Models.PantryItem.ProductId
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SpizarniaAPI.Models.PantryItem.Product*
+  commentId: Overload:SpizarniaAPI.Models.PantryItem.Product
+  href: SpizarniaAPI.Models.PantryItem.html#SpizarniaAPI_Models_PantryItem_Product
+  name: Product
+  nameWithType: PantryItem.Product
+  fullName: SpizarniaAPI.Models.PantryItem.Product
+- uid: SpizarniaAPI.Models.Product
+  commentId: T:SpizarniaAPI.Models.Product
+  parent: SpizarniaAPI.Models
+  href: SpizarniaAPI.Models.Product.html
+  name: Product
+  nameWithType: Product
+  fullName: SpizarniaAPI.Models.Product
+- uid: SpizarniaAPI.Models.PantryItem.Quantity*
+  commentId: Overload:SpizarniaAPI.Models.PantryItem.Quantity
+  href: SpizarniaAPI.Models.PantryItem.html#SpizarniaAPI_Models_PantryItem_Quantity
+  name: Quantity
+  nameWithType: PantryItem.Quantity
+  fullName: SpizarniaAPI.Models.PantryItem.Quantity
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal
+  nameWithType: decimal
+  fullName: decimal
+  nameWithType.vb: Decimal
+  fullName.vb: Decimal
+  name.vb: Decimal
+- uid: SpizarniaAPI.Models.PantryItem.Unit*
+  commentId: Overload:SpizarniaAPI.Models.PantryItem.Unit
+  href: SpizarniaAPI.Models.PantryItem.html#SpizarniaAPI_Models_PantryItem_Unit
+  name: Unit
+  nameWithType: PantryItem.Unit
+  fullName: SpizarniaAPI.Models.PantryItem.Unit
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SpizarniaAPI.Models.PantryItem.ExpirationDate*
+  commentId: Overload:SpizarniaAPI.Models.PantryItem.ExpirationDate
+  href: SpizarniaAPI.Models.PantryItem.html#SpizarniaAPI_Models_PantryItem_ExpirationDate
+  name: ExpirationDate
+  nameWithType: PantryItem.ExpirationDate
+  fullName: SpizarniaAPI.Models.PantryItem.ExpirationDate
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: SpizarniaAPI.Models.PantryItem.UpdatedAt*
+  commentId: Overload:SpizarniaAPI.Models.PantryItem.UpdatedAt
+  href: SpizarniaAPI.Models.PantryItem.html#SpizarniaAPI_Models_PantryItem_UpdatedAt
+  name: UpdatedAt
+  nameWithType: PantryItem.UpdatedAt
+  fullName: SpizarniaAPI.Models.PantryItem.UpdatedAt
+- uid: SpizarniaAPI.Models.PantryItem.CreatedAt*
+  commentId: Overload:SpizarniaAPI.Models.PantryItem.CreatedAt
+  href: SpizarniaAPI.Models.PantryItem.html#SpizarniaAPI_Models_PantryItem_CreatedAt
+  name: CreatedAt
+  nameWithType: PantryItem.CreatedAt
+  fullName: SpizarniaAPI.Models.PantryItem.CreatedAt

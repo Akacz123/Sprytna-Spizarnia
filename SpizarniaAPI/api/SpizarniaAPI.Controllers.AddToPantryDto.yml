@@ -1,0 +1,511 @@
+### YamlMime:ManagedReference
+items:
+- uid: SpizarniaAPI.Controllers.AddToPantryDto
+  commentId: T:SpizarniaAPI.Controllers.AddToPantryDto
+  id: AddToPantryDto
+  parent: SpizarniaAPI.Controllers
+  children:
+  - SpizarniaAPI.Controllers.AddToPantryDto.Barcode
+  - SpizarniaAPI.Controllers.AddToPantryDto.ExpirationDate
+  - SpizarniaAPI.Controllers.AddToPantryDto.Name
+  - SpizarniaAPI.Controllers.AddToPantryDto.Quantity
+  - SpizarniaAPI.Controllers.AddToPantryDto.Unit
+  langs:
+  - csharp
+  - vb
+  name: AddToPantryDto
+  nameWithType: AddToPantryDto
+  fullName: SpizarniaAPI.Controllers.AddToPantryDto
+  type: Class
+  source:
+    remote:
+      path: SpizarniaAPI/SpizarniaAPI/Controllers/PantryController.cs
+      branch: main
+      repo: https://github.com/Akacz123/Sprytna-Spizarnia.git
+    id: AddToPantryDto
+    path: SpizarniaAPI/Controllers/PantryController.cs
+    startLine: 188
+  assemblies:
+  - SpizarniaAPI
+  namespace: SpizarniaAPI.Controllers
+  syntax:
+    content: public class AddToPantryDto
+    content.vb: Public Class AddToPantryDto
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SpizarniaAPI.Controllers.AddToPantryDto.Name
+  commentId: P:SpizarniaAPI.Controllers.AddToPantryDto.Name
+  id: Name
+  parent: SpizarniaAPI.Controllers.AddToPantryDto
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: AddToPantryDto.Name
+  fullName: SpizarniaAPI.Controllers.AddToPantryDto.Name
+  type: Property
+  source:
+    remote:
+      path: SpizarniaAPI/SpizarniaAPI/Controllers/PantryController.cs
+      branch: main
+      repo: https://github.com/Akacz123/Sprytna-Spizarnia.git
+    id: Name
+    path: SpizarniaAPI/Controllers/PantryController.cs
+    startLine: 190
+  assemblies:
+  - SpizarniaAPI
+  namespace: SpizarniaAPI.Controllers
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: SpizarniaAPI.Controllers.AddToPantryDto.Name*
+- uid: SpizarniaAPI.Controllers.AddToPantryDto.Barcode
+  commentId: P:SpizarniaAPI.Controllers.AddToPantryDto.Barcode
+  id: Barcode
+  parent: SpizarniaAPI.Controllers.AddToPantryDto
+  langs:
+  - csharp
+  - vb
+  name: Barcode
+  nameWithType: AddToPantryDto.Barcode
+  fullName: SpizarniaAPI.Controllers.AddToPantryDto.Barcode
+  type: Property
+  source:
+    remote:
+      path: SpizarniaAPI/SpizarniaAPI/Controllers/PantryController.cs
+      branch: main
+      repo: https://github.com/Akacz123/Sprytna-Spizarnia.git
+    id: Barcode
+    path: SpizarniaAPI/Controllers/PantryController.cs
+    startLine: 191
+  assemblies:
+  - SpizarniaAPI
+  namespace: SpizarniaAPI.Controllers
+  syntax:
+    content: public string Barcode { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Barcode As String
+  overload: SpizarniaAPI.Controllers.AddToPantryDto.Barcode*
+- uid: SpizarniaAPI.Controllers.AddToPantryDto.ExpirationDate
+  commentId: P:SpizarniaAPI.Controllers.AddToPantryDto.ExpirationDate
+  id: ExpirationDate
+  parent: SpizarniaAPI.Controllers.AddToPantryDto
+  langs:
+  - csharp
+  - vb
+  name: ExpirationDate
+  nameWithType: AddToPantryDto.ExpirationDate
+  fullName: SpizarniaAPI.Controllers.AddToPantryDto.ExpirationDate
+  type: Property
+  source:
+    remote:
+      path: SpizarniaAPI/SpizarniaAPI/Controllers/PantryController.cs
+      branch: main
+      repo: https://github.com/Akacz123/Sprytna-Spizarnia.git
+    id: ExpirationDate
+    path: SpizarniaAPI/Controllers/PantryController.cs
+    startLine: 192
+  assemblies:
+  - SpizarniaAPI
+  namespace: SpizarniaAPI.Controllers
+  syntax:
+    content: public DateTime ExpirationDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property ExpirationDate As Date
+  overload: SpizarniaAPI.Controllers.AddToPantryDto.ExpirationDate*
+- uid: SpizarniaAPI.Controllers.AddToPantryDto.Quantity
+  commentId: P:SpizarniaAPI.Controllers.AddToPantryDto.Quantity
+  id: Quantity
+  parent: SpizarniaAPI.Controllers.AddToPantryDto
+  langs:
+  - csharp
+  - vb
+  name: Quantity
+  nameWithType: AddToPantryDto.Quantity
+  fullName: SpizarniaAPI.Controllers.AddToPantryDto.Quantity
+  type: Property
+  source:
+    remote:
+      path: SpizarniaAPI/SpizarniaAPI/Controllers/PantryController.cs
+      branch: main
+      repo: https://github.com/Akacz123/Sprytna-Spizarnia.git
+    id: Quantity
+    path: SpizarniaAPI/Controllers/PantryController.cs
+    startLine: 193
+  assemblies:
+  - SpizarniaAPI
+  namespace: SpizarniaAPI.Controllers
+  syntax:
+    content: public decimal Quantity { get; set; }
+    parameters: []
+    return:
+      type: System.Decimal
+    content.vb: Public Property Quantity As Decimal
+  overload: SpizarniaAPI.Controllers.AddToPantryDto.Quantity*
+- uid: SpizarniaAPI.Controllers.AddToPantryDto.Unit
+  commentId: P:SpizarniaAPI.Controllers.AddToPantryDto.Unit
+  id: Unit
+  parent: SpizarniaAPI.Controllers.AddToPantryDto
+  langs:
+  - csharp
+  - vb
+  name: Unit
+  nameWithType: AddToPantryDto.Unit
+  fullName: SpizarniaAPI.Controllers.AddToPantryDto.Unit
+  type: Property
+  source:
+    remote:
+      path: SpizarniaAPI/SpizarniaAPI/Controllers/PantryController.cs
+      branch: main
+      repo: https://github.com/Akacz123/Sprytna-Spizarnia.git
+    id: Unit
+    path: SpizarniaAPI/Controllers/PantryController.cs
+    startLine: 194
+  assemblies:
+  - SpizarniaAPI
+  namespace: SpizarniaAPI.Controllers
+  syntax:
+    content: public string Unit { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Unit As String
+  overload: SpizarniaAPI.Controllers.AddToPantryDto.Unit*
+references:
+- uid: SpizarniaAPI.Controllers
+  commentId: N:SpizarniaAPI.Controllers
+  href: SpizarniaAPI.html
+  name: SpizarniaAPI.Controllers
+  nameWithType: SpizarniaAPI.Controllers
+  fullName: SpizarniaAPI.Controllers
+  spec.csharp:
+  - uid: SpizarniaAPI
+    name: SpizarniaAPI
+    href: SpizarniaAPI.html
+  - name: .
+  - uid: SpizarniaAPI.Controllers
+    name: Controllers
+    href: SpizarniaAPI.Controllers.html
+  spec.vb:
+  - uid: SpizarniaAPI
+    name: SpizarniaAPI
+    href: SpizarniaAPI.html
+  - name: .
+  - uid: SpizarniaAPI.Controllers
+    name: Controllers
+    href: SpizarniaAPI.Controllers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SpizarniaAPI.Controllers.AddToPantryDto.Name*
+  commentId: Overload:SpizarniaAPI.Controllers.AddToPantryDto.Name
+  href: SpizarniaAPI.Controllers.AddToPantryDto.html#SpizarniaAPI_Controllers_AddToPantryDto_Name
+  name: Name
+  nameWithType: AddToPantryDto.Name
+  fullName: SpizarniaAPI.Controllers.AddToPantryDto.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SpizarniaAPI.Controllers.AddToPantryDto.Barcode*
+  commentId: Overload:SpizarniaAPI.Controllers.AddToPantryDto.Barcode
+  href: SpizarniaAPI.Controllers.AddToPantryDto.html#SpizarniaAPI_Controllers_AddToPantryDto_Barcode
+  name: Barcode
+  nameWithType: AddToPantryDto.Barcode
+  fullName: SpizarniaAPI.Controllers.AddToPantryDto.Barcode
+- uid: SpizarniaAPI.Controllers.AddToPantryDto.ExpirationDate*
+  commentId: Overload:SpizarniaAPI.Controllers.AddToPantryDto.ExpirationDate
+  href: SpizarniaAPI.Controllers.AddToPantryDto.html#SpizarniaAPI_Controllers_AddToPantryDto_ExpirationDate
+  name: ExpirationDate
+  nameWithType: AddToPantryDto.ExpirationDate
+  fullName: SpizarniaAPI.Controllers.AddToPantryDto.ExpirationDate
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: SpizarniaAPI.Controllers.AddToPantryDto.Quantity*
+  commentId: Overload:SpizarniaAPI.Controllers.AddToPantryDto.Quantity
+  href: SpizarniaAPI.Controllers.AddToPantryDto.html#SpizarniaAPI_Controllers_AddToPantryDto_Quantity
+  name: Quantity
+  nameWithType: AddToPantryDto.Quantity
+  fullName: SpizarniaAPI.Controllers.AddToPantryDto.Quantity
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal
+  nameWithType: decimal
+  fullName: decimal
+  nameWithType.vb: Decimal
+  fullName.vb: Decimal
+  name.vb: Decimal
+- uid: SpizarniaAPI.Controllers.AddToPantryDto.Unit*
+  commentId: Overload:SpizarniaAPI.Controllers.AddToPantryDto.Unit
+  href: SpizarniaAPI.Controllers.AddToPantryDto.html#SpizarniaAPI_Controllers_AddToPantryDto_Unit
+  name: Unit
+  nameWithType: AddToPantryDto.Unit
+  fullName: SpizarniaAPI.Controllers.AddToPantryDto.Unit
