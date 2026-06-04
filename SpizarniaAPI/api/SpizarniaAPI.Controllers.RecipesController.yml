@@ -6,6 +6,7 @@ items:
   parent: SpizarniaAPI.Controllers
   children:
   - SpizarniaAPI.Controllers.RecipesController.#ctor(SpizarniaAPI.Data.AppDbContext)
+  - SpizarniaAPI.Controllers.RecipesController.GetRecipe(System.Int32)
   - SpizarniaAPI.Controllers.RecipesController.GetSuggestions
   - SpizarniaAPI.Controllers.RecipesController.SeedRecipes
   langs:
@@ -306,6 +307,52 @@ items:
     arguments:
     - type: System.String
       value: suggestions
+- uid: SpizarniaAPI.Controllers.RecipesController.GetRecipe(System.Int32)
+  commentId: M:SpizarniaAPI.Controllers.RecipesController.GetRecipe(System.Int32)
+  id: GetRecipe(System.Int32)
+  parent: SpizarniaAPI.Controllers.RecipesController
+  langs:
+  - csharp
+  - vb
+  name: GetRecipe(int)
+  nameWithType: RecipesController.GetRecipe(int)
+  fullName: SpizarniaAPI.Controllers.RecipesController.GetRecipe(int)
+  type: Method
+  source:
+    remote:
+      path: SpizarniaAPI/SpizarniaAPI/Controllers/RecipesController.cs
+      branch: main
+      repo: https://github.com/Akacz123/Sprytna-Spizarnia.git
+    id: GetRecipe
+    path: SpizarniaAPI/Controllers/RecipesController.cs
+    startLine: 74
+  assemblies:
+  - SpizarniaAPI
+  namespace: SpizarniaAPI.Controllers
+  syntax:
+    content: >-
+      [HttpGet("{id}")]
+
+      public Task<IActionResult> GetRecipe(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+    content.vb: >-
+      <HttpGet("{id}")>
+
+      Public Function GetRecipe(id As Integer) As Task(Of IActionResult)
+  overload: SpizarniaAPI.Controllers.RecipesController.GetRecipe*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: '{id}'
+  nameWithType.vb: RecipesController.GetRecipe(Integer)
+  fullName.vb: SpizarniaAPI.Controllers.RecipesController.GetRecipe(Integer)
+  name.vb: GetRecipe(Integer)
 - uid: SpizarniaAPI.Controllers.RecipesController.SeedRecipes
   commentId: M:SpizarniaAPI.Controllers.RecipesController.SeedRecipes
   id: SeedRecipes
@@ -324,7 +371,7 @@ items:
       repo: https://github.com/Akacz123/Sprytna-Spizarnia.git
     id: SeedRecipes
     path: SpizarniaAPI/Controllers/RecipesController.cs
-    startLine: 67
+    startLine: 96
   assemblies:
   - SpizarniaAPI
   namespace: SpizarniaAPI.Controllers
@@ -9732,6 +9779,23 @@ references:
     name: Tasks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: SpizarniaAPI.Controllers.RecipesController.GetRecipe*
+  commentId: Overload:SpizarniaAPI.Controllers.RecipesController.GetRecipe
+  href: SpizarniaAPI.Controllers.RecipesController.html#SpizarniaAPI_Controllers_RecipesController_GetRecipe_System_Int32_
+  name: GetRecipe
+  nameWithType: RecipesController.GetRecipe
+  fullName: SpizarniaAPI.Controllers.RecipesController.GetRecipe
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
 - uid: SpizarniaAPI.Controllers.RecipesController.SeedRecipes*
   commentId: Overload:SpizarniaAPI.Controllers.RecipesController.SeedRecipes
   href: SpizarniaAPI.Controllers.RecipesController.html#SpizarniaAPI_Controllers_RecipesController_SeedRecipes

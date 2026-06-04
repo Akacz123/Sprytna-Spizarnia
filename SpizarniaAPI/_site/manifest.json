@@ -388,6 +388,66 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "images/add-product-qr.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/add-product-qr.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/dashboard-alerty.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/dashboard-alerty.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/dashboard-przepisy.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/dashboard-przepisy.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/login.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/login.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/moja-kuchnia.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/moja-kuchnia.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/ustawienia-wyglad.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ustawienia-wyglad.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {

@@ -36,6 +36,7 @@
   "SpizarniaAPI.Controllers.PantryController.UpdatePantryItem(System.Guid,SpizarniaAPI.Controllers.AddToPantryDto)": "SpizarniaAPI.Controllers.PantryController.yml",
   "SpizarniaAPI.Controllers.RecipesController": "SpizarniaAPI.Controllers.RecipesController.yml",
   "SpizarniaAPI.Controllers.RecipesController.#ctor(SpizarniaAPI.Data.AppDbContext)": "SpizarniaAPI.Controllers.RecipesController.yml",
+  "SpizarniaAPI.Controllers.RecipesController.GetRecipe(System.Int32)": "SpizarniaAPI.Controllers.RecipesController.yml",
   "SpizarniaAPI.Controllers.RecipesController.GetSuggestions": "SpizarniaAPI.Controllers.RecipesController.yml",
   "SpizarniaAPI.Controllers.RecipesController.SeedRecipes": "SpizarniaAPI.Controllers.RecipesController.yml",
   "SpizarniaAPI.Controllers.ScanDto": "SpizarniaAPI.Controllers.ScanDto.yml",

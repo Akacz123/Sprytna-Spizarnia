@@ -245,43 +245,44 @@ Sprytna_Spizarnia/
         └── main.jsx
 ```
 
----
+## Cykl życia i ekrany aplikacji (Use Cases)
 
-## Opis ekranów aplikacji
+Aplikacja Sprytna Spiżarnia oferuje pełny cykl życia użytkownika od rejestracji, przez dodawanie i zarządzanie zapasami, aż po wykorzystanie produktów w sugerowanych przepisach.
 
-### Logowanie i rejestracja (`/login`)
+### 1. Logowanie i rejestracja (`/login`)
+![Ekran logowania](images/login.png)
 
 Ekran startowy. Formularz z polem e-mail i hasłem obsługuje dwa tryby: **Zaloguj się** i **Zarejestruj się** (przełączane jednym przyciskiem). Po zalogowaniu API zwraca `userId`, który zapisywany jest w `localStorage`. Każde kolejne żądanie HTTP dołącza ten identyfikator w nagłówku `X-User-Id`.
 
-### Pulpit (`/`)
-
-Główny ekran podzielony na dwie kolumny:
-
-- **Zjedz mnie wkrótce!** – alerty o produktach przeterminowanych (czerwone karty) i kończących się w ciągu 3 dni (żółte karty). Przyciski „Zjedzone" i „Wyrzucone" usuwają produkt z spiżarni przez `DELETE /api/pantry/{id}`.
-- **Uratuj to, co masz!** – propozycje przepisów pobierane z `GET /api/recipes/suggestions`, posortowane malejąco wg liczby „ratowanych" składników. Do każdego przepisu dobierany jest obrazek z Unsplash na podstawie słów kluczowych w nazwie.
-
-### Moja Kuchnia (`/kuchnia`)
-
-Pełna tabela wszystkich produktów w spiżarni danego użytkownika. Funkcjonalności:
-
-- **Wyszukiwarka** po nazwie
-- **Filtry statusu**: Wszystkie / Świeże / Krótka data (≤3 dni) / Przeterminowane
-- **Edycja** przez kliknięcie w wiersz – otwiera modal z polami: nazwa, kod kreskowy, data ważności, ilość, jednostka (`PUT /api/pantry/{id}`)
-- **Usuwanie** przyciskiem „Usuń" (`DELETE /api/pantry/{id}`)
-
-### Dodaj Produkt (`/dodaj`)
+### 2. Dodaj Produkt (`/dodaj`)
+![Ekran dodawania produktu](images/add-product-qr.png)
 
 Dwa sposoby dodania produktu:
-
 1. **Ręcznie** – formularz z polami: Nazwa, Kod kreskowy (opcjonalnie), Data ważności, Ilość, Jednostka (szt./kg/g/l/ml/opak.)
 2. **Skaner mobilny** – kliknięcie „Uruchom skaner w telefonie" generuje sesję i kod QR. Zeskanowanie go telefonem otwiera widok `/scan/:sessionId` z kamerą. Zeskanowany kod kreskowy trafia do `POST /api/scanner/{sessionId}`. Strona desktop odpytuje `GET /api/scanner/{sessionId}` co 1,5 s. Po wykryciu kodu aplikacja pobiera dane z Open Food Facts i uzupełnia formularz.
 
-### Ustawienia (`/ustawienia`)
+### 3. Moja Kuchnia (`/kuchnia`)
+![Ekran spiżarni](images/moja-kuchnia.png)
+
+Pełna tabela wszystkich produktów w spiżarni danego użytkownika. Funkcjonalności:
+- **Wyszukiwarka** po nazwie
+- **Filtry statusu**: Wszystkie / Świeże / Krótka data (≤3 dni) / Przeterminowane
+- **Usuwanie** przyciskiem „Usuń" (`DELETE /api/pantry/{id}`)
+
+### 4. Pulpit: Alerty i Przepisy ratunkowe (`/`)
+![Ekran pulpitu z alertami](images/dashboard-alerty.png)
+![Ekran pulpitu z przepisami](images/dashboard-przepisy.png)
+
+Główny ekran podzielony na dwie kolumny:
+- **Zjedz mnie wkrótce! (Lewa strona)** – alerty o produktach przeterminowanych (czerwone karty) i kończących się w ciągu 3 dni (żółte karty). Przyciski „Zjedzone" i „Wyrzucone" usuwają produkt ze spiżarni przez `DELETE /api/pantry/{id}`.
+- **Uratuj to, co masz! (Prawa strona)** – propozycje przepisów pobierane z `GET /api/recipes/suggestions`, posortowane malejąco wg liczby „ratowanych" składników. Kliknięcie "Zobacz przepis" pozwala przejść do szczegółów przygotowania i uratować żywność.
+
+### 5. Ustawienia (`/ustawienia`)
+![Ekran ustawień wyglądu](images/ustawienia-wyglad.png)
 
 Dwie zakładki w bocznym menu:
-
-- **Profil i Konto**: wyświetlanie e-maila (read-only), wybór awatara z galerii 9 postaci (DiceBear API, zapisywany przez `PUT /api/auth/avatar`), pola zmiany hasła (UI)
-- **Wygląd**: przełącznik motywu (jasny/ciemny) i rozmiaru tekstu (mała/domyślna/duża). Preferencje zapisywane w `localStorage` i natychmiast stosowane do całej aplikacji przez zdarzenie `appearanceChanged`.
+- **Profil i Konto**: wyświetlanie e-maila (read-only), wybór awatara z galerii (zapisywany przez `PUT /api/auth/avatar`), pola zmiany hasła.
+- **Wygląd**: przełącznik motywu (jasny/ciemny) i rozmiaru tekstu (mała/domyślna/duża). Preferencje zapisywane w `localStorage` i natychmiast stosowane do całej aplikacji.
 
 ---
 

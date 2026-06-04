@@ -365,35 +365,40 @@ const api = axios.create({
         ├── index.css
         └── main.jsx
 </code></pre>
-<hr>
-<h2 id="opis-ekranów-aplikacji">Opis ekranów aplikacji</h2>
-<h3 id="logowanie-i-rejestracja-login">Logowanie i rejestracja (<code>/login</code>)</h3>
+<h2 id="cykl-życia-i-ekrany-aplikacji-use-cases">Cykl życia i ekrany aplikacji (Use Cases)</h2>
+<p>Aplikacja Sprytna Spiżarnia oferuje pełny cykl życia użytkownika od rejestracji, przez dodawanie i zarządzanie zapasami, aż po wykorzystanie produktów w sugerowanych przepisach.</p>
+<h3 id="1-logowanie-i-rejestracja-login">1. Logowanie i rejestracja (<code>/login</code>)</h3>
+<p><img src="images/login.png" alt="Ekran logowania"></p>
 <p>Ekran startowy. Formularz z polem e-mail i hasłem obsługuje dwa tryby: <strong>Zaloguj się</strong> i <strong>Zarejestruj się</strong> (przełączane jednym przyciskiem). Po zalogowaniu API zwraca <code>userId</code>, który zapisywany jest w <code>localStorage</code>. Każde kolejne żądanie HTTP dołącza ten identyfikator w nagłówku <code>X-User-Id</code>.</p>
-<h3 id="pulpit-">Pulpit (<code>/</code>)</h3>
-<p>Główny ekran podzielony na dwie kolumny:</p>
-<ul>
-<li><strong>Zjedz mnie wkrótce!</strong> – alerty o produktach przeterminowanych (czerwone karty) i kończących się w ciągu 3 dni (żółte karty). Przyciski „Zjedzone&quot; i „Wyrzucone&quot; usuwają produkt z spiżarni przez <code>DELETE /api/pantry/{id}</code>.</li>
-<li><strong>Uratuj to, co masz!</strong> – propozycje przepisów pobierane z <code>GET /api/recipes/suggestions</code>, posortowane malejąco wg liczby „ratowanych&quot; składników. Do każdego przepisu dobierany jest obrazek z Unsplash na podstawie słów kluczowych w nazwie.</li>
-</ul>
-<h3 id="moja-kuchnia-kuchnia">Moja Kuchnia (<code>/kuchnia</code>)</h3>
-<p>Pełna tabela wszystkich produktów w spiżarni danego użytkownika. Funkcjonalności:</p>
-<ul>
-<li><strong>Wyszukiwarka</strong> po nazwie</li>
-<li><strong>Filtry statusu</strong>: Wszystkie / Świeże / Krótka data (≤3 dni) / Przeterminowane</li>
-<li><strong>Edycja</strong> przez kliknięcie w wiersz – otwiera modal z polami: nazwa, kod kreskowy, data ważności, ilość, jednostka (<code>PUT /api/pantry/{id}</code>)</li>
-<li><strong>Usuwanie</strong> przyciskiem „Usuń&quot; (<code>DELETE /api/pantry/{id}</code>)</li>
-</ul>
-<h3 id="dodaj-produkt-dodaj">Dodaj Produkt (<code>/dodaj</code>)</h3>
+<h3 id="2-dodaj-produkt-dodaj">2. Dodaj Produkt (<code>/dodaj</code>)</h3>
+<p><img src="images/add-product-qr.png" alt="Ekran dodawania produktu"></p>
 <p>Dwa sposoby dodania produktu:</p>
 <ol>
 <li><strong>Ręcznie</strong> – formularz z polami: Nazwa, Kod kreskowy (opcjonalnie), Data ważności, Ilość, Jednostka (szt./kg/g/l/ml/opak.)</li>
 <li><strong>Skaner mobilny</strong> – kliknięcie „Uruchom skaner w telefonie&quot; generuje sesję i kod QR. Zeskanowanie go telefonem otwiera widok <code>/scan/:sessionId</code> z kamerą. Zeskanowany kod kreskowy trafia do <code>POST /api/scanner/{sessionId}</code>. Strona desktop odpytuje <code>GET /api/scanner/{sessionId}</code> co 1,5 s. Po wykryciu kodu aplikacja pobiera dane z Open Food Facts i uzupełnia formularz.</li>
 </ol>
-<h3 id="ustawienia-ustawienia">Ustawienia (<code>/ustawienia</code>)</h3>
+<h3 id="3-moja-kuchnia-kuchnia">3. Moja Kuchnia (<code>/kuchnia</code>)</h3>
+<p><img src="images/moja-kuchnia.png" alt="Ekran spiżarni"></p>
+<p>Pełna tabela wszystkich produktów w spiżarni danego użytkownika. Funkcjonalności:</p>
+<ul>
+<li><strong>Wyszukiwarka</strong> po nazwie</li>
+<li><strong>Filtry statusu</strong>: Wszystkie / Świeże / Krótka data (≤3 dni) / Przeterminowane</li>
+<li><strong>Usuwanie</strong> przyciskiem „Usuń&quot; (<code>DELETE /api/pantry/{id}</code>)</li>
+</ul>
+<h3 id="4-pulpit-alerty-i-przepisy-ratunkowe-">4. Pulpit: Alerty i Przepisy ratunkowe (<code>/</code>)</h3>
+<p><img src="images/dashboard-alerty.png" alt="Ekran pulpitu z alertami">
+<img src="images/dashboard-przepisy.png" alt="Ekran pulpitu z przepisami"></p>
+<p>Główny ekran podzielony na dwie kolumny:</p>
+<ul>
+<li><strong>Zjedz mnie wkrótce! (Lewa strona)</strong> – alerty o produktach przeterminowanych (czerwone karty) i kończących się w ciągu 3 dni (żółte karty). Przyciski „Zjedzone&quot; i „Wyrzucone&quot; usuwają produkt ze spiżarni przez <code>DELETE /api/pantry/{id}</code>.</li>
+<li><strong>Uratuj to, co masz! (Prawa strona)</strong> – propozycje przepisów pobierane z <code>GET /api/recipes/suggestions</code>, posortowane malejąco wg liczby „ratowanych&quot; składników. Kliknięcie &quot;Zobacz przepis&quot; pozwala przejść do szczegółów przygotowania i uratować żywność.</li>
+</ul>
+<h3 id="5-ustawienia-ustawienia">5. Ustawienia (<code>/ustawienia</code>)</h3>
+<p><img src="images/ustawienia-wyglad.png" alt="Ekran ustawień wyglądu"></p>
 <p>Dwie zakładki w bocznym menu:</p>
 <ul>
-<li><strong>Profil i Konto</strong>: wyświetlanie e-maila (read-only), wybór awatara z galerii 9 postaci (DiceBear API, zapisywany przez <code>PUT /api/auth/avatar</code>), pola zmiany hasła (UI)</li>
-<li><strong>Wygląd</strong>: przełącznik motywu (jasny/ciemny) i rozmiaru tekstu (mała/domyślna/duża). Preferencje zapisywane w <code>localStorage</code> i natychmiast stosowane do całej aplikacji przez zdarzenie <code>appearanceChanged</code>.</li>
+<li><strong>Profil i Konto</strong>: wyświetlanie e-maila (read-only), wybór awatara z galerii (zapisywany przez <code>PUT /api/auth/avatar</code>), pola zmiany hasła.</li>
+<li><strong>Wygląd</strong>: przełącznik motywu (jasny/ciemny) i rozmiaru tekstu (mała/domyślna/duża). Preferencje zapisywane w <code>localStorage</code> i natychmiast stosowane do całej aplikacji.</li>
 </ul>
 <hr>
 <h2 id="endpointy-api">Endpointy API</h2>

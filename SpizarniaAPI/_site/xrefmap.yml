@@ -474,6 +474,22 @@ references:
   fullName.vb: SpizarniaAPI.Controllers.RecipesController.New
   nameWithType: RecipesController.RecipesController
   nameWithType.vb: RecipesController.New
+- uid: SpizarniaAPI.Controllers.RecipesController.GetRecipe(System.Int32)
+  name: GetRecipe(int)
+  href: api/SpizarniaAPI.Controllers.RecipesController.html#SpizarniaAPI_Controllers_RecipesController_GetRecipe_System_Int32_
+  commentId: M:SpizarniaAPI.Controllers.RecipesController.GetRecipe(System.Int32)
+  name.vb: GetRecipe(Integer)
+  fullName: SpizarniaAPI.Controllers.RecipesController.GetRecipe(int)
+  fullName.vb: SpizarniaAPI.Controllers.RecipesController.GetRecipe(Integer)
+  nameWithType: RecipesController.GetRecipe(int)
+  nameWithType.vb: RecipesController.GetRecipe(Integer)
+- uid: SpizarniaAPI.Controllers.RecipesController.GetRecipe*
+  name: GetRecipe
+  href: api/SpizarniaAPI.Controllers.RecipesController.html#SpizarniaAPI_Controllers_RecipesController_GetRecipe_
+  commentId: Overload:SpizarniaAPI.Controllers.RecipesController.GetRecipe
+  isSpec: "True"
+  fullName: SpizarniaAPI.Controllers.RecipesController.GetRecipe
+  nameWithType: RecipesController.GetRecipe
 - uid: SpizarniaAPI.Controllers.RecipesController.GetSuggestions
   name: GetSuggestions()
   href: api/SpizarniaAPI.Controllers.RecipesController.html#SpizarniaAPI_Controllers_RecipesController_GetSuggestions

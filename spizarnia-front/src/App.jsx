@@ -7,6 +7,8 @@ import LoginPage from "./pages/LoginPage";
 import MobileScanner from "./components/MobileScanner";
 import SettingsPage from "./pages/SettingsPage";
 import AddProductPage from "./pages/AddProductPage";
+import RecipesPage from "./pages/RecipesPage";
+import RecipeDetailsPage from "./pages/RecipeDetailsPage";
 
 const ProtectedRoute = ({ children }) => {
   const isAuthenticated = localStorage.getItem("userId") !== null;
@@ -52,6 +54,8 @@ function App() {
                     <Route path="/ustawienia" element={<SettingsPage />} />
                     <Route path="/kuchnia" element={<PantryPage />} />
                     <Route path="/dodaj" element={<AddProductPage />} />
+                    <Route path="/przepisy" element={<RecipesPage />} />
+                    <Route path="/przepisy/:id" element={<RecipeDetailsPage />} />
                     <Route path="*" element={<Navigate to="/" replace />} />
                   </Routes>
                 </main>

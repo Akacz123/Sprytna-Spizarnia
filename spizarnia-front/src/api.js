@@ -1,7 +1,8 @@
 import axios from "axios";
 
+const backendHost = window.location.hostname;
 const api = axios.create({
-  baseURL: "http://localhost:5289/api",
+  baseURL: `http://${backendHost}:5289/api`,
 });
 api.interceptors.request.use((config) => {
   const userId = localStorage.getItem("userId");

@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SpizarniaAPI.Data;
 using SpizarniaAPI.Models;
@@ -32,29 +32,36 @@ namespace SpizarniaAPI.Controllers
             var today = DateTime.UtcNow.Date;
             var shortDateLimit = today.AddDays(3);
 
-            var dyingIngredients = await _context.PantryItems
+            var dyingIngredientNames = await _context.PantryItems
                 .Include(p => p.Product)
-                .Where(p => p.UserId == userId && p.ExpirationDate != null && p.ExpirationDate <= shortDateLimit && p.Product != null)
-                .Select(p => p.Product.IngredientId)
+                .ThenInclude(pr => pr.Ingredient)
+                .Where(p => p.UserId == userId && p.ExpirationDate != null && p.ExpirationDate <= shortDateLimit && p.Product != null && p.Product.Ingredient != null)
+                .Select(p => p.Product!.Ingredient!.Name.ToLower())
                 .Distinct()
                 .ToListAsync();
 
-            if (!dyingIngredients.Any()) return Ok(new List<object>());
+            if (!dyingIngredientNames.Any()) return Ok(new List<object>());
 
-            var suggestedRecipes = await _context.Recipes
+            var allRecipes = await _context.Recipes
                 .Include(r => r.RecipeIngredients)
                 .ThenInclude(ri => ri.Ingredient)
-                .Where(r => r.RecipeIngredients.Any(ri => dyingIngredients.Contains(ri.IngredientId)))
+                .ToListAsync();
+
+            var suggestedRecipes = allRecipes
+                .Where(r => r.RecipeIngredients.Any(ri => 
+                    ri.Ingredient != null && 
+                    dyingIngredientNames.Any(dName => dName.Contains(ri.Ingredient.Name.ToLower()) || ri.Ingredient.Name.ToLower().Contains(dName))
+                ))
                 .Select(r => new
                 {
                     id = r.Id,
                     name = r.Title,
                     savedIngredients = r.RecipeIngredients
-                        .Where(ri => dyingIngredients.Contains(ri.IngredientId) && ri.Ingredient != null)
-                        .Select(ri => ri.Ingredient.Name)
+                        .Where(ri => ri.Ingredient != null && dyingIngredientNames.Any(dName => dName.Contains(ri.Ingredient.Name.ToLower()) || ri.Ingredient.Name.ToLower().Contains(dName)))
+                        .Select(ri => ri.Ingredient!.Name)
                         .ToList()
                 })
-                .ToListAsync();
+                .ToList();
 
             var sorted = suggestedRecipes
                 .GroupBy(r => r.id)
@@ -63,6 +70,28 @@ namespace SpizarniaAPI.Controllers
                 .ToList();
 
             return Ok(sorted);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetRecipe(int id)
+        {
+            var recipe = await _context.Recipes
+                .Include(r => r.RecipeIngredients)
+                .ThenInclude(ri => ri.Ingredient)
+                .FirstOrDefaultAsync(r => r.Id == id);
+
+            if (recipe == null) return NotFound();
+
+            return Ok(new
+            {
+                id = recipe.Id,
+                title = recipe.Title,
+                instructions = recipe.Instructions,
+                ingredients = recipe.RecipeIngredients
+                    .Where(ri => ri.Ingredient != null)
+                    .Select(ri => ri.Ingredient!.Name)
+                    .ToList()
+            });
         }
 
         [HttpPost("seed")]

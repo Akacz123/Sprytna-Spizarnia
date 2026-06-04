@@ -39,7 +39,7 @@ export default function AddProductPage() {
     if (isWaitingForScan && sessionId) {
       interval = setInterval(async () => {
         try {
-          const res = await api.get(`/scanner/${sessionId}`);
+          const res = await api.get(`/Scanner/${sessionId}`);
           if (res.status === 200 && res.data.barcode) {
             setIsWaitingForScan(false);
             fetchProductDataFromGlobalDatabase(res.data.barcode);

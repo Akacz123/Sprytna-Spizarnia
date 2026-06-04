@@ -8,10 +8,11 @@ import {
   ArrowRight,
   Database,
 } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import api from "../api";
 
 export default function DashboardPage() {
+  const navigate = useNavigate();
   const [urgentProducts, setUrgentProducts] = useState([]);
   const [expiringProducts, setExpiringProducts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -313,7 +314,7 @@ export default function DashboardPage() {
                     </div>
                   </div>
                   <div className="flex justify-start">
-                    <button className="bg-[#00C853] hover:bg-green-600 text-white font-bold px-6 py-3 rounded-xl transition shadow-sm w-full sm:w-auto">
+                    <button onClick={() => navigate(`/przepisy/${recipe.id}`)} className="bg-[#00C853] hover:bg-green-600 text-white font-bold px-6 py-3 rounded-xl transition shadow-sm w-full sm:w-auto text-center">
                       Zobacz przepis
                     </button>
                   </div>
