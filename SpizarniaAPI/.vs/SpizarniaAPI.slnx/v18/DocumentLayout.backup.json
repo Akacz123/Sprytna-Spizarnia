@@ -1,0 +1,309 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|c:\\users\\100wi\\onedrive - uniwersytet rzeszowski\\2rok2sem\\csharp\\spizarniaapi\\spizarniaapi\\spizarniaapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|solutionrelative:spizarniaapi\\spizarniaapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|c:\\users\\100wi\\onedrive - uniwersytet rzeszowski\\2rok2sem\\csharp\\spizarniaapi\\spizarniaapi\\models\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|solutionrelative:spizarniaapi\\models\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|c:\\users\\100wi\\onedrive - uniwersytet rzeszowski\\2rok2sem\\csharp\\spizarniaapi\\spizarniaapi\\models\\pantryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|solutionrelative:spizarniaapi\\models\\pantryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|c:\\users\\100wi\\onedrive - uniwersytet rzeszowski\\2rok2sem\\csharp\\spizarniaapi\\spizarniaapi\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|solutionrelative:spizarniaapi\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|c:\\users\\100wi\\onedrive - uniwersytet rzeszowski\\2rok2sem\\csharp\\spizarniaapi\\spizarniaapi\\models\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|solutionrelative:spizarniaapi\\models\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|c:\\users\\100wi\\onedrive - uniwersytet rzeszowski\\2rok2sem\\csharp\\spizarniaapi\\spizarniaapi\\models\\recipeingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|solutionrelative:spizarniaapi\\models\\recipeingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|c:\\users\\100wi\\onedrive - uniwersytet rzeszowski\\2rok2sem\\csharp\\spizarniaapi\\spizarniaapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|solutionrelative:spizarniaapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|c:\\users\\100wi\\onedrive - uniwersytet rzeszowski\\2rok2sem\\csharp\\spizarniaapi\\spizarniaapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|solutionrelative:spizarniaapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|c:\\users\\100wi\\onedrive - uniwersytet rzeszowski\\2rok2sem\\csharp\\spizarniaapi\\spizarniaapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|solutionrelative:spizarniaapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|c:\\users\\100wi\\onedrive - uniwersytet rzeszowski\\2rok2sem\\csharp\\spizarniaapi\\spizarniaapi\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|solutionrelative:spizarniaapi\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|c:\\users\\100wi\\onedrive - uniwersytet rzeszowski\\2rok2sem\\csharp\\spizarniaapi\\spizarniaapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|solutionrelative:spizarniaapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|c:\\users\\100wi\\onedrive - uniwersytet rzeszowski\\2rok2sem\\csharp\\spizarniaapi\\spizarniaapi\\controllers\\scannercontroller.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|solutionrelative:spizarniaapi\\controllers\\scannercontroller.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|c:\\users\\100wi\\onedrive - uniwersytet rzeszowski\\2rok2sem\\csharp\\spizarniaapi\\spizarniaapi\\controllers\\recipescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|solutionrelative:spizarniaapi\\controllers\\recipescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|c:\\users\\100wi\\onedrive - uniwersytet rzeszowski\\2rok2sem\\csharp\\spizarniaapi\\spizarniaapi\\controllers\\pantrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|solutionrelative:spizarniaapi\\controllers\\pantrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|c:\\users\\100wi\\onedrive - uniwersytet rzeszowski\\2rok2sem\\csharp\\spizarniaapi\\spizarniaapi\\controllers\\ingredientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|solutionrelative:spizarniaapi\\controllers\\ingredientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|c:\\users\\100wi\\onedrive - uniwersytet rzeszowski\\2rok2sem\\csharp\\spizarniaapi\\spizarniaapi\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|solutionrelative:spizarniaapi\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|c:\\users\\100wi\\onedrive - uniwersytet rzeszowski\\2rok2sem\\csharp\\spizarniaapi\\spizarniaapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|solutionrelative:spizarniaapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|c:\\users\\100wi\\onedrive - uniwersytet rzeszowski\\2rok2sem\\csharp\\spizarniaapi\\spizarniaapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{19C5E27B-1BB2-F3DD-D6AD-5882DDE8380D}|SpizarniaAPI\\SpizarniaAPI.csproj|solutionrelative:spizarniaapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SpizarniaAPI.csproj",
+              "DocumentMoniker": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\SpizarniaAPI.csproj",
+              "RelativeDocumentMoniker": "SpizarniaAPI\\SpizarniaAPI.csproj",
+              "ToolTip": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\SpizarniaAPI.csproj",
+              "RelativeToolTip": "SpizarniaAPI\\SpizarniaAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-02T21:49:42.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Ingredient.cs",
+              "DocumentMoniker": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Models\\Ingredient.cs",
+              "RelativeDocumentMoniker": "SpizarniaAPI\\Models\\Ingredient.cs",
+              "ToolTip": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Models\\Ingredient.cs",
+              "RelativeToolTip": "SpizarniaAPI\\Models\\Ingredient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T10:19:44.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PantryItem.cs",
+              "DocumentMoniker": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Models\\PantryItem.cs",
+              "RelativeDocumentMoniker": "SpizarniaAPI\\Models\\PantryItem.cs",
+              "ToolTip": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Models\\PantryItem.cs",
+              "RelativeToolTip": "SpizarniaAPI\\Models\\PantryItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T10:19:43.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "SpizarniaAPI\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Models\\Product.cs",
+              "RelativeToolTip": "SpizarniaAPI\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T10:19:56.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Recipe.cs",
+              "DocumentMoniker": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Models\\Recipe.cs",
+              "RelativeDocumentMoniker": "SpizarniaAPI\\Models\\Recipe.cs",
+              "ToolTip": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Models\\Recipe.cs",
+              "RelativeToolTip": "SpizarniaAPI\\Models\\Recipe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T10:20:01.284Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RecipeIngredient.cs",
+              "DocumentMoniker": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Models\\RecipeIngredient.cs",
+              "RelativeDocumentMoniker": "SpizarniaAPI\\Models\\RecipeIngredient.cs",
+              "ToolTip": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Models\\RecipeIngredient.cs",
+              "RelativeToolTip": "SpizarniaAPI\\Models\\RecipeIngredient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T10:20:05.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Models\\User.cs",
+              "RelativeDocumentMoniker": "SpizarniaAPI\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Models\\User.cs",
+              "RelativeToolTip": "SpizarniaAPI\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T10:20:08.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "SpizarniaAPI\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "SpizarniaAPI\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T10:27:06.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Program.cs",
+              "RelativeDocumentMoniker": "SpizarniaAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Program.cs",
+              "RelativeToolTip": "SpizarniaAPI\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T10:21:18.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "SpizarniaAPI\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Models\\Category.cs",
+              "RelativeToolTip": "SpizarniaAPI\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T10:19:21.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "SpizarniaAPI\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "SpizarniaAPI\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAEwAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T15:27:24.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ScannerController.cs",
+              "DocumentMoniker": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Controllers\\ScannerController.cs",
+              "RelativeDocumentMoniker": "SpizarniaAPI\\Controllers\\ScannerController.cs",
+              "ToolTip": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Controllers\\ScannerController.cs",
+              "RelativeToolTip": "SpizarniaAPI\\Controllers\\ScannerController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T19:51:27.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RecipesController.cs",
+              "DocumentMoniker": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Controllers\\RecipesController.cs",
+              "RelativeDocumentMoniker": "SpizarniaAPI\\Controllers\\RecipesController.cs",
+              "ToolTip": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Controllers\\RecipesController.cs",
+              "RelativeToolTip": "SpizarniaAPI\\Controllers\\RecipesController.cs",
+              "ViewState": "AgIAAO0AAAAAAAAAAAAAAIEAAABzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T15:26:25.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PantryController.cs",
+              "DocumentMoniker": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Controllers\\PantryController.cs",
+              "RelativeDocumentMoniker": "SpizarniaAPI\\Controllers\\PantryController.cs",
+              "ToolTip": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Controllers\\PantryController.cs",
+              "RelativeToolTip": "SpizarniaAPI\\Controllers\\PantryController.cs",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAAAMAAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T10:38:30.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IngredientsController.cs",
+              "DocumentMoniker": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Controllers\\IngredientsController.cs",
+              "RelativeDocumentMoniker": "SpizarniaAPI\\Controllers\\IngredientsController.cs",
+              "ToolTip": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Controllers\\IngredientsController.cs",
+              "RelativeToolTip": "SpizarniaAPI\\Controllers\\IngredientsController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T15:29:06.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "SpizarniaAPI\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "SpizarniaAPI\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAAUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T15:29:38.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "SpizarniaAPI\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "SpizarniaAPI\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T16:25:27.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "SpizarniaAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\100wi\\OneDrive - Uniwersytet Rzeszowski\\2rok2sem\\csharp\\SpizarniaAPI\\SpizarniaAPI\\appsettings.json",
+              "RelativeToolTip": "SpizarniaAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-21T10:22:18.528Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
